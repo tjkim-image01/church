@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+
+<html data-sbs-theme="dark" class="dark" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Side by Side — Webtoon &amp; Sequential Art Archive</title>
+<!-- Fonts: Bebas Neue, Noto Sans KR, JetBrains Mono -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Noto+Sans+KR:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<link href="assets/css/webtoon.css" rel="stylesheet"/>
+<style>
+    /* Sharp geometric museum reset */
+    * {
+      border-radius: 0 !important;
+      -webkit-font-smoothing: antialiased;
+    }
+    ::selection {
+      background-color: #6358DE;
+      color: #FFFFFF;
+    }
+    /* Custom rigid scrollbar */
+    ::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0E0E0E;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #262626;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #6358DE;
+    }
+  </style>
+<link href="assets/css/mobile.css" rel="stylesheet"/>
+<script defer src="assets/js/menu.js"></script>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-secondary selection:text-white min-h-screen overflow-x-hidden">
+<div class="sbs-mbar"><a href="index.html">Side by Side</a><button type="button" aria-expanded="false" aria-controls="sbs-menu">MENU</button></div>
+<nav class="sbs-menu" id="sbs-menu" aria-label="Mobile"><a href="index.html">Home</a><a href="exhibition.html">Exhibitions</a><a href="artists.html">Artists</a><a href="webtoon.html" aria-current="page">Webtoon</a><a href="work.html">Works</a><a href="about.html#programs">Programs</a><a href="about.html">About</a><small>문화예술교회 · Art Space</small></nav>
+<!-- ========================================================================= -->
+<!-- 1. LEFT FIXED VERTICAL SPINE / MARGIN (Matching Homepage Screen 2)       -->
+<!-- ========================================================================= -->
+<aside class="sbs-rail fixed top-0 left-0 h-screen w-16 md:w-20 border-r border-[#262626] bg-[#0E0E0E] flex flex-col justify-between items-center py-6 z-50 select-none">
+<!-- Top label -->
+<div class="font-label-monospaced text-label-monospaced text-[#A3A3A3] tracking-widest text-[11px] writing-mode-vertical uppercase">
+      V 04 / WEBTOON
+    </div>
+<!-- Centered Vertical Rotated Brand Title -->
+<div class="my-auto flex items-center justify-center">
+<span class="font-headline-md text-headline-md text-white/90 tracking-[0.28em] -rotate-90 whitespace-nowrap uppercase transform select-none">
+        SIDE BY SIDE
+      </span>
+</div>
+<!-- Bottom coordinates & status -->
+<div class="font-label-monospaced text-label-monospaced text-[#747878] text-[10px] tracking-wider text-center leading-tight">
+<span class="block text-secondary font-label-monospaced-bold text-label-monospaced-bold">[ROOM 04]</span>
+<span class="block mt-1">SEQUENTIAL</span>
+<span class="block">ART</span>
+</div>
+</aside>
+<!-- ========================================================================= -->
+<!-- 2. TOP HEADER BAR                                                         -->
+<!-- ========================================================================= -->
+<header class="sbs-fhead fixed top-0 left-16 md:left-20 right-0 h-14 bg-[#0E0E0E]/95 backdrop-blur-none border-b border-[#262626] z-40 px-6 md:px-10 flex items-center justify-between">
+<div class="flex items-center space-x-6">
+<span class="font-label-monospaced text-label-monospaced text-white tracking-widest uppercase">
+        SANCTUARY &amp; WHITE CUBE ARCHIVE · VOL. 2026
+      </span>
+<span class="hidden xl:inline-block font-label-monospaced text-label-monospaced text-[#747878]">
+        |
+      </span>
+<span class="hidden xl:inline-block font-label-monospaced text-label-monospaced text-[#A3A3A3] tracking-wider">
+        SEOUL, KOREA — 37.5443° N, 127.0560° E
+      </span>
+</div>
+<div class="flex items-center space-x-4">
+<span class="font-label-monospaced text-label-monospaced text-secondary tracking-widest">
+        [SEQUENTIAL ART ARCHIVE &amp; WEBTOON]
+      </span>
+<span class="inline-block w-2 h-2 bg-secondary animate-pulse"></span>
+</div>
+</header>
+<!-- ========================================================================= -->
+<!-- 3. TOP-RIGHT FIXED VERTICAL INDEX MENU (Museum Index Strip)               -->
+<!-- ========================================================================= -->
+<nav class="sbs-dnav fixed top-20 right-6 md:right-10 z-30 hidden lg:flex flex-col items-end space-y-2 pointer-events-auto bg-[#0E0E0E]/80 py-3 pl-4 border-l border-[#262626]">
+<div class="sbs-dnav font-label-monospaced text-label-monospaced text-[#747878] uppercase tracking-widest mb-1 text-[10px]">
+      CATALOGUE INDEX
+    </div>
+<a class="font-label-monospaced text-label-monospaced text-[#A3A3A3] hover:text-white tracking-widest transition-none" href="exhibition.html">
+      01. EXHIBITIONS
+    </a>
+<a class="font-label-monospaced text-label-monospaced text-[#A3A3A3] hover:text-white tracking-widest transition-none" href="artists.html">
+      02. ARTISTS
+    </a>
+<!-- Active Nav State: 03. WEBTOON -->
+<a class="font-label-monospaced-bold text-label-monospaced-bold text-white border-b-2 border-secondary tracking-widest pb-0.5 transition-none flex items-center gap-1" href="webtoon.html">
+<span class="text-secondary text-[10px]">■</span> 03. WEBTOON
+    </a>
+<a class="font-label-monospaced text-label-monospaced text-[#A3A3A3] hover:text-white tracking-widest transition-none" href="work.html">
+      04. WORKS
+    </a>
+<a class="font-label-monospaced text-label-monospaced text-[#A3A3A3] hover:text-white tracking-widest transition-none" href="about.html#programs">
+      05. PROGRAMS
+    </a>
+<a class="font-label-monospaced text-label-monospaced text-[#A3A3A3] hover:text-white tracking-widest transition-none" href="about.html">
+      06. ABOUT
+    </a>
+</nav>
+<!-- ========================================================================= -->
+<!-- MAIN CONTENT CANVAS (Offset by left spine)                                -->
+<!-- ========================================================================= -->
+<main class="sbs-main ml-16 md:ml-20 pt-20 px-6 md:px-14 lg:pr-48 pb-32 max-w-[1720px]">
+<!-- --------------------------------------------------------------------- -->
+<!-- SECTION 1: EDITORIAL HEADER & CURATORIAL MANIFESTO                    -->
+<!-- --------------------------------------------------------------------- -->
+<section class="border-b border-[#262626] pb-14 pt-6">
+<div class="flex items-center gap-3 mb-4">
+<span class="font-label-monospaced text-label-monospaced text-secondary tracking-widest uppercase">
+          [CURATORIAL MONOGRAPH 04 / 연재 아카이브]
+        </span>
+<span class="w-12 h-px bg-[#262626]"></span>
+<span class="font-label-monospaced text-label-monospaced text-[#747878]">
+          COLLECTION 2026.Q1
+        </span>
+</div>
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-8 items-end">
+<div class="xl:col-span-8">
+<h1 class="font-headline-lg text-headline-lg md:text-[84px] md:leading-[88px] text-white uppercase tracking-wider">
+            WEBTOON × SEQUENTIAL ART
+          </h1>
+<h2 class="font-body-lg text-[28px] md:text-[34px] leading-tight text-white/90 font-light tracking-tight mt-1">
+            연속 예술: 침묵과 스크롤의 성소
+          </h2>
+</div>
+<div class="xl:col-span-4 border-l border-[#262626] pl-6 xl:mb-2">
+<p class="font-body-md text-body-md text-[#A3A3A3] leading-relaxed">
+            칸과 칸 사이, 보이지 않는 침묵 속에서 펼쳐지는 영적 서사와 회화적 시선. 10인의 작가가 선보이는 주간 연재 그래픽 노블.
+          </p>
+<div class="mt-4 font-label-monospaced text-label-monospaced text-[#747878] text-[11px] uppercase tracking-wider">
+            CURATION: CULTURE &amp; ARTS COMMUNITY / SIDE BY SIDE
+          </div>
+</div>
+</div>
+</section>
+<!-- --------------------------------------------------------------------- -->
+<!-- SECTION 2: FEATURED SERIES (Top Showcase)                             -->
+<!-- --------------------------------------------------------------------- -->
+<section class="py-16 border-b border-[#262626]">
+<div class="flex items-center justify-between mb-8">
+<div class="font-label-monospaced-bold text-label-monospaced-bold text-white tracking-widest uppercase flex items-center gap-2">
+<span class="text-secondary text-xs">◆</span>
+          FEATURED SERIAL OF THE MONTH — ONGOING
+        </div>
+<div class="font-label-monospaced text-label-monospaced text-[#747878]">
+          ARCHIVE REF. #WT-2026-001
+        </div>
+</div>
+<!-- 2-Column Editorial Showcase -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+<!-- Left: Sharp 3:4 Artwork Frame -->
+<div class="lg:col-span-5">
+<div class="border border-[#333333] p-1.5 bg-[#141414]">
+<div class="aspect-[3/4] w-full relative overflow-hidden bg-[#0A0A0A]">
+<img alt="Moody cinematic sequential art webtoon cover titled '빛의 정원' (Garden of Light), contemporary Korean graphic novel style, mysterious glowing light particles filtering through dark architectural courtyard or botanical greenhouse at dusk, painterly atmospheric lighting, high fidelity, fine art illustration, no text" class="w-full h-full object-cover grayscale-[15%] contrast-105" src="assets/img/9801c374eb3e8762.jpg"/>
+<div class="absolute top-3 left-3 bg-[#0E0E0E]/90 px-2.5 py-1 border border-[#262626] font-label-monospaced text-[11px] text-white">
+                NO. 01 / HIGHLIGHT
+              </div>
+</div>
+</div>
+<!-- Wall label underneath image -->
+<div class="mt-3 font-label-monospaced text-label-monospaced text-[#747878] space-y-0.5 border-l border-[#262626] pl-3">
+<div class="text-[#A3A3A3]">COVER ART: ARCHIVE IMAGE WT-04</div>
+<div>SPEC: DIGITAL MIXED MEDIA / SEQUENTIAL PROJECTION 896×1200PX</div>
+<div>STATUS: ARCHIVE PRESERVED · GALLERY PROJECTION VER. 1.0</div>
+</div>
+</div>
+<!-- Right: Series Curatorial Dossier -->
+<div class="lg:col-span-7 flex flex-col justify-between h-full pt-2">
+<div>
+<div class="inline-block border border-secondary text-secondary px-2.5 py-1 font-label-monospaced-bold text-label-monospaced-bold tracking-widest text-[11px] mb-4">
+              [PRIMARY SERIAL / 매주 금요일 연재]
+            </div>
+<h3 class="font-headline-lg text-headline-lg md:text-[68px] md:leading-[68px] text-white uppercase tracking-wide">
+              빛의 정원
+            </h3>
+<div class="font-headline-md text-headline-md text-[#A3A3A3] uppercase tracking-wider -mt-1 mb-6">
+              GARDEN OF LIGHT
+            </div>
+<!-- Author / Credits -->
+<div class="border-y border-[#262626] py-3.5 my-4 grid grid-cols-1 md:grid-cols-2 gap-3">
+<div>
+<span class="block font-label-monospaced text-label-monospaced text-[#747878]">AUTHOR &amp; ARTIST</span>
+<span class="font-body-md text-body-md text-white font-medium">한서윤 (HAN SEO-YOUN)</span>
+</div>
+<div>
+<span class="block font-label-monospaced text-label-monospaced text-[#747878]">AFFILIATION</span>
+<span class="font-body-md text-body-md text-[#A3A3A3]">Resident Fellow 2025–2026</span>
+</div>
+</div>
+<!-- Metadata Line -->
+<div class="font-label-monospaced text-label-monospaced text-secondary tracking-wide py-2">
+              매주 금요일 연재 · 24화 연재중 · 장르: 순수 회화적 서사, 상징주의, 관상적 영성
+            </div>
+<!-- Curatorial Synopsis -->
+<div class="mt-6 space-y-4">
+<div class="font-label-monospaced text-label-monospaced text-[#747878] uppercase">
+                CURATORIAL SYNOPSIS
+              </div>
+<p class="font-body-lg text-body-lg text-[#D1D1D1] leading-relaxed">
+                버려진 온실과 빛이 머무는 성소에서 벌어지는 기억의 복원기. 캔버스의 유채 질감과 디지털 스크롤 연출이 교차하며 침묵 속 구원의 순간을 포착한다. 작가는 상실된 신앙과 내면의 공허를 마주하는 주인공의 여정을 정교한 모노크롬 톤과 따스한 광휘의 대비를 통해 표현한다.
+              </p>
+<p class="font-body-md text-body-md text-[#A3A3A3] leading-relaxed">
+                "이 작품은 단순한 만화가 아닌, 스크롤되는 벽화에 가깝다. 각각의 컷은 단절되지 않고 침묵을 호흡하며, 관객으로 하여금 영적 공간 안으로 걸어 들어가게 한다." — 큐레이터 권성민
+              </p>
+</div>
+</div>
+<!-- Interactive Sharp Underlined Links -->
+<div class="pt-10 mt-8 border-t border-[#262626] flex flex-wrap items-center gap-8">
+<a class="font-label-monospaced-bold text-label-monospaced-bold text-white border-b-2 border-secondary pb-1 tracking-widest hover:text-secondary transition-none uppercase" href="webtoon.html">
+              [1화부터 보기 / READ FIRST EPISODE →]
+            </a>
+<a class="font-label-monospaced text-label-monospaced text-[#A3A3A3] border-b border-[#444748] pb-1 tracking-widest hover:text-white hover:border-white transition-none uppercase" href="artists.html">
+              [작가 노트 및 아카이브 서문 / CURATORIAL ESSAY →]
+            </a>
+</div>
+</div>
+</div>
+</section>
+<!-- --------------------------------------------------------------------- -->
+<!-- SECTION 3: GRID OF 10 WEBTOON SERIES (5 per row, 2 rows)              -->
+<!-- --------------------------------------------------------------------- -->
+<section class="py-16 border-b border-[#262626]">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 pb-4 border-b border-[#262626]">
+<div>
+<span class="font-label-monospaced text-label-monospaced text-secondary uppercase tracking-widest block mb-1">
+            COLLECTION REPOSITORY
+          </span>
+<h2 class="font-headline-lg text-headline-lg text-white uppercase tracking-wide">
+            01 / 전 작품 아카이브 — ALL WEBTOON SERIALS
+          </h2>
+</div>
+<div class="font-label-monospaced text-label-monospaced text-[#A3A3A3] tracking-widest mt-2 md:mt-0">
+          [TOTAL 10 SERIALS REGISTERED]
+        </div>
+</div>
+<!-- Bento-style 5 Columns Grid -->
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+<!-- Card 1 -->
+<article class="group border border-[#262626] bg-[#111111] hover:border-secondary transition-none flex flex-col justify-between">
+<div>
+<div class="aspect-[3/4] w-full bg-[#181818] border-b border-[#262626] relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:opacity-90 transition-none" data-alt="A striking minimalist webtoon graphic cover art in dark monochrome palette with soft golden light beams breaking through an abandoned cathedral glass dome. High museum aesthetics, painterly charcoal textures, serene spiritual mood, no text." src="assets/img/06fc7cc2cf4585e7.jpg"/>
+<span class="absolute top-2 left-2 font-label-monospaced text-[10px] bg-[#0E0E0E] text-secondary px-1.5 py-0.5 border border-[#262626]">
+                01
+              </span>
+</div>
+<div class="p-4">
+<div class="font-label-monospaced text-[10px] text-secondary tracking-widest mb-1">
+                [연재중 / ONGOING (금)]
+              </div>
+<h3 class="font-body-md text-white font-bold leading-snug">
+                빛의 정원
+              </h3>
+<p class="font-label-monospaced text-[11px] text-[#A3A3A3] mt-1">
+                한서윤 (Han Seo-Youn)
+              </p>
+</div>
+</div>
+<div class="px-4 pb-4 pt-1 border-t border-[#1C1C1C] flex justify-between items-center font-label-monospaced text-[10px] text-[#747878]">
+<span>24 EPISODES</span>
+<span class="text-white group-hover:text-secondary">VIEW →</span>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="group border border-[#262626] bg-[#111111] hover:border-secondary transition-none flex flex-col justify-between">
+<div>
+<div class="aspect-[3/4] w-full bg-[#181818] border-b border-[#262626] relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:opacity-90 transition-none" data-alt="A fine art sequential cover depicting a solitary urban convenience store bathed in quiet fluorescent blue-green light during deep rain at 3am. High contrast editorial style, contemporary Seoul nightscape, poetic alienation, no typography." src="assets/img/03e879ec1f8aa6d8.jpg"/>
+<span class="absolute top-2 left-2 font-label-monospaced text-[10px] bg-[#0E0E0E] text-secondary px-1.5 py-0.5 border border-[#262626]">
+                02
+              </span>
+</div>
+<div class="p-4">
+<div class="font-label-monospaced text-[10px] text-secondary tracking-widest mb-1">
+                [연재중 / ONGOING (화)]
+              </div>
+<h3 class="font-body-md text-white font-bold leading-snug">
+                심야편의점 Ep.12
+              </h3>
+<p class="font-label-monospaced text-[11px] text-[#A3A3A3] mt-1">
+                이산하 (Lee San-Ha)
+              </p>
+</div>
+</div>
+<div class="px-4 pb-4 pt-1 border-t border-[#1C1C1C] flex justify-between items-center font-label-monospaced text-[10px] text-[#747878]">
+<span>12 EPISODES</span>
+<span class="text-white group-hover:text-secondary">VIEW →</span>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="group border border-[#262626] bg-[#111111] hover:border-secondary transition-none flex flex-col justify-between">
+<div>
+<div class="aspect-[3/4] w-full bg-[#181818] border-b border-[#262626] relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:opacity-90 transition-none" data-alt="An austere biblical and historical sequential artwork showing cloaked desert figures assembling a sacred tabernacle structure under twilight indigo sky. Heavy chiaroscuro, classical museum oil painting texture, dignified silence, zero icons." src="assets/img/fc6e67f7240f07e5.jpg"/>
+<span class="absolute top-2 left-2 font-label-monospaced text-[10px] bg-[#0E0E0E] text-secondary px-1.5 py-0.5 border border-[#262626]">
+                03
+              </span>
+</div>
+<div class="p-4">
+<div class="font-label-monospaced text-[10px] text-secondary tracking-widest mb-1">
+                [연재중 / ONGOING (수)]
+              </div>
+<h3 class="font-body-md text-white font-bold leading-snug">
+                성막의 사도들
+              </h3>
+<p class="font-label-monospaced text-[11px] text-[#A3A3A3] mt-1">
+                강민석 (Kang Min-Seok)
+              </p>
+</div>
+</div>
+<div class="px-4 pb-4 pt-1 border-t border-[#1C1C1C] flex justify-between items-center font-label-monospaced text-[10px] text-[#747878]">
+<span>18 EPISODES</span>
+<span class="text-white group-hover:text-secondary">VIEW →</span>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="group border border-[#262626] bg-[#111111] hover:border-secondary transition-none flex flex-col justify-between">
+<div>
+<div class="aspect-[3/4] w-full bg-[#181818] border-b border-[#262626] relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:opacity-90 transition-none" data-alt="A cyber-lit industrial cross glowing in neon purple against brutalist concrete cathedral pillars. Futuristic contemplative graphic novel cover, high textural depth, deep shadows and striking violet highlights, no letters." src="assets/img/3413103db1e738db.jpg"/>
+<span class="absolute top-2 left-2 font-label-monospaced text-[10px] bg-[#0E0E0E] text-secondary px-1.5 py-0.5 border border-[#262626]">
+                04
+              </span>
+</div>
+<div class="p-4">
+<div class="font-label-monospaced text-[10px] text-secondary tracking-widest mb-1">
+                [연재중 / ONGOING (금)]
+              </div>
+<h3 class="font-body-md text-white font-bold leading-snug">
+                네온 성소
+              </h3>
+<p class="font-label-monospaced text-[11px] text-[#A3A3A3] mt-1">
+                문채원 (Moon Chae-Won)
+              </p>
+</div>
+</div>
+<div class="px-4 pb-4 pt-1 border-t border-[#1C1C1C] flex justify-between items-center font-label-monospaced text-[10px] text-[#747878]">
+<span>09 EPISODES</span>
+<span class="text-white group-hover:text-secondary">VIEW →</span>
+</div>
+</article>
+<!-- Card 5 -->
+<article class="group border border-[#262626] bg-[#111111] hover:border-secondary transition-none flex flex-col justify-between">
+<div>
+<div class="aspect-[3/4] w-full bg-[#181818] border-b border-[#262626] relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:opacity-90 transition-none" data-alt="An ethereal black and white sequential artwork depicting a single lantern held by an unseen hand in an endless pitch-black cavern. Dramatic contrast, fine pencil hatchings, sublime reverent mood, no words." src="assets/img/b0560cc7ea95b356.jpg"/>
+<span class="absolute top-2 left-2 font-label-monospaced text-[10px] bg-[#0E0E0E] text-secondary px-1.5 py-0.5 border border-[#262626]">
+                05
+              </span>
+</div>
+<div class="p-4">
+<div class="font-label-monospaced text-[10px] text-secondary tracking-widest mb-1">
+                [연재중 / ONGOING (토)]
+              </div>
+<h3 class="font-body-md text-white font-bold leading-snug">
+                어둠 속의 빛
+              </h3>
+<p class="font-label-monospaced text-[11px] text-[#A3A3A3] mt-1">
+                정인호 (Jung In-Ho)
+              </p>
+</div>
+</div>
+<div class="px-4 pb-4 pt-1 border-t border-[#1C1C1C] flex justify-between items-center font-label-monospaced text-[10px] text-[#747878]">
+<span>15 EPISODES</span>
+<span class="text-white group-hover:text-secondary">VIEW →</span>
+</div>
+</article>
+<!-- Row 2: Card 6 -->
+<article class="group border border-[#262626] bg-[#111111] hover:border-secondary transition-none flex flex-col justify-between">
+<div>
+<div class="aspect-[3/4] w-full bg-[#181818] border-b border-[#262626] relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:opacity-90 transition-none" data-alt="A grand towering geometric monolith of Babel collapsing into ethereal dust in a monochromatic fog. Architectural speculative illustration, fine line work, profound sense of historic warning and grace, clean composition." src="assets/img/c36794142be96334.jpg"/>
+<span class="absolute top-2 left-2 font-label-monospaced text-[10px] bg-[#0E0E0E] text-[#A3A3A3] px-1.5 py-0.5 border border-[#262626]">
+                06
+              </span>
+</div>
+<div class="p-4">
+<div class="font-label-monospaced text-[10px] text-[#A3A3A3] tracking-widest mb-1">
+                [시즌1 완결 / COMPLETED]
+              </div>
+<h3 class="font-body-md text-white font-bold leading-snug">
+                바벨의 아이들
+              </h3>
+<p class="font-label-monospaced text-[11px] text-[#A3A3A3] mt-1">
+                조서연 / 임준호
+              </p>
+</div>
+</div>
+<div class="px-4 pb-4 pt-1 border-t border-[#1C1C1C] flex justify-between items-center font-label-monospaced text-[10px] text-[#747878]">
+<span>30 EPISODES</span>
+<span class="text-white group-hover:text-secondary">ARCHIVE →</span>
+</div>
+</article>
+<!-- Card 7 -->
+<article class="group border border-[#262626] bg-[#111111] hover:border-secondary transition-none flex flex-col justify-between">
+<div>
+<div class="aspect-[3/4] w-full bg-[#181818] border-b border-[#262626] relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:opacity-90 transition-none" data-alt="A calm pastoral scene with gentle wind rippling through tall wheat fields at dawn under a pale grey overcast sky. Poetic Korean modern graphic novel style, subtle muted earthy tones, peaceful reflection, no text." src="assets/img/e72e9f2cee0071dc.jpg"/>
+<span class="absolute top-2 left-2 font-label-monospaced text-[10px] bg-[#0E0E0E] text-secondary px-1.5 py-0.5 border border-[#262626]">
+                07
+              </span>
+</div>
+<div class="p-4">
+<div class="font-label-monospaced text-[10px] text-secondary tracking-widest mb-1">
+                [연재중 / ONGOING (월)]
+              </div>
+<h3 class="font-body-md text-white font-bold leading-snug">
+                평화의 날들
+              </h3>
+<p class="font-label-monospaced text-[11px] text-[#A3A3A3] mt-1">
+                백다솜 (Baek Da-Som)
+              </p>
+</div>
+</div>
+<div class="px-4 pb-4 pt-1 border-t border-[#1C1C1C] flex justify-between items-center font-label-monospaced text-[10px] text-[#747878]">
+<span>08 EPISODES</span>
+<span class="text-white group-hover:text-secondary">VIEW →</span>
+</div>
+</article>
+<!-- Card 8 -->
+<article class="group border border-[#262626] bg-[#111111] hover:border-secondary transition-none flex flex-col justify-between">
+<div>
+<div class="aspect-[3/4] w-full bg-[#181818] border-b border-[#262626] relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:opacity-90 transition-none" data-alt="A surreal crystal ocean with frozen glassy waves under a cosmic deep violet horizon. Fine art contemporary comic panel, intricate water reflections, contemplative mood, gallery aesthetics, clean layout." src="assets/img/fd857a4b3c71e9f5.jpg"/>
+<span class="absolute top-2 left-2 font-label-monospaced text-[10px] bg-[#0E0E0E] text-secondary px-1.5 py-0.5 border border-[#262626]">
+                08
+              </span>
+</div>
+<div class="p-4">
+<div class="font-label-monospaced text-[10px] text-secondary tracking-widest mb-1">
+                [연재중 / ONGOING (목)]
+              </div>
+<h3 class="font-body-md text-white font-bold leading-snug">
+                유리 바다의 증언
+              </h3>
+<p class="font-label-monospaced text-[11px] text-[#A3A3A3] mt-1">
+                최하은 (Choi Ha-Eun)
+              </p>
+</div>
+</div>
+<div class="px-4 pb-4 pt-1 border-t border-[#1C1C1C] flex justify-between items-center font-label-monospaced text-[10px] text-[#747878]">
+<span>16 EPISODES</span>
+<span class="text-white group-hover:text-secondary">VIEW →</span>
+</div>
+</article>
+<!-- Card 9 -->
+<article class="group border border-[#262626] bg-[#111111] hover:border-secondary transition-none flex flex-col justify-between">
+<div>
+<div class="aspect-[3/4] w-full bg-[#181818] border-b border-[#262626] relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:opacity-90 transition-none" data-alt="An ancient weathered parchment book dissolving into starlight in a quiet monastic library room. Dark moody atmosphere, chiaroscuro lighting, deep sepia and black pigments, museum level fine art illustration." src="assets/img/8ea1e6c877361196.jpg"/>
+<span class="absolute top-2 left-2 font-label-monospaced text-[10px] bg-[#0E0E0E] text-[#A3A3A3] px-1.5 py-0.5 border border-[#262626]">
+                09
+              </span>
+</div>
+<div class="p-4">
+<div class="font-label-monospaced text-[10px] text-[#A3A3A3] tracking-widest mb-1">
+                [완결 / COMPLETED]
+              </div>
+<h3 class="font-body-md text-white font-bold leading-snug">
+                무명(無名)의 서
+              </h3>
+<p class="font-label-monospaced text-[11px] text-[#A3A3A3] mt-1">
+                송건우 (Song Gun-Woo)
+              </p>
+</div>
+</div>
+<div class="px-4 pb-4 pt-1 border-t border-[#1C1C1C] flex justify-between items-center font-label-monospaced text-[10px] text-[#747878]">
+<span>20 EPISODES</span>
+<span class="text-white group-hover:text-secondary">ARCHIVE →</span>
+</div>
+</article>
+<!-- Card 10 -->
+<article class="group border border-[#262626] bg-[#111111] hover:border-secondary transition-none flex flex-col justify-between">
+<div>
+<div class="aspect-[3/4] w-full bg-[#181818] border-b border-[#262626] relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:opacity-90 transition-none" data-alt="An austere stone altar bathed in pre-dawn deep indigo shadows with single taper candle flickering gently. Contemporary sacred graphic novel, solemn church architecture, raw stone texture, high graphic clarity." src="assets/img/68a28f9a4b5c3d1a.jpg"/>
+<span class="absolute top-2 left-2 font-label-monospaced text-[10px] bg-[#0E0E0E] text-secondary px-1.5 py-0.5 border border-[#262626]">
+                10
+              </span>
+</div>
+<div class="p-4">
+<div class="font-label-monospaced text-[10px] text-secondary tracking-widest mb-1">
+                [연재중 / ONGOING (일)]
+              </div>
+<h3 class="font-body-md text-white font-bold leading-snug">
+                새벽 4시의 제단
+              </h3>
+<p class="font-label-monospaced text-[11px] text-[#A3A3A3] mt-1">
+                윤지후 (Yoon Ji-Hoo)
+              </p>
+</div>
+</div>
+<div class="px-4 pb-4 pt-1 border-t border-[#1C1C1C] flex justify-between items-center font-label-monospaced text-[10px] text-[#747878]">
+<span>22 EPISODES</span>
+<span class="text-white group-hover:text-secondary">VIEW →</span>
+</div>
+</article>
+</div>
+</section>
+<!-- --------------------------------------------------------------------- -->
+<!-- SECTION 4: EPISODE LIST TABLE (Featured Series '빛의 정원' 회차 목차)  -->
+<!-- --------------------------------------------------------------------- -->
+<section class="py-16 border-b border-[#262626]" id="episodes">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-4 border-b border-[#262626]">
+<div>
+<div class="font-label-monospaced text-label-monospaced text-secondary uppercase tracking-widest mb-1">
+            SERIAL INDEX &amp; RECENT CUTS
+          </div>
+<h2 class="font-headline-lg text-headline-lg text-white uppercase tracking-wide">
+            02 / '빛의 정원' 회차 목차 — EPISODE ARCHIVE
+          </h2>
+</div>
+<div class="font-label-monospaced text-label-monospaced text-[#A3A3A3] tracking-widest mt-2 md:mt-0">
+          [LATEST 6 EPISODES / TOTAL 24]
+        </div>
+</div>
+<!-- Tabular Archive Layout with hairline borders -->
+<div class="border-t border-[#262626]">
+<!-- Row 1 -->
+<div class="group border-b border-[#262626] py-4 px-3 flex flex-col md:flex-row md:items-center justify-between hover:bg-[#141414] transition-none">
+<div class="flex items-center gap-6">
+<div class="w-16 h-12 bg-[#1A1A1A] border border-[#333333] shrink-0 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Detailed panel thumbnail of delicate dawn twilight rays touching a broken stone windowsill. High art webtoon frame, atmospheric minimalism, fine charcoal shading, crisp composition." src="assets/img/e7e02d2a8101431c.jpg"/>
+</div>
+<div>
+<div class="font-label-monospaced text-[11px] text-secondary">EPISODE 024</div>
+<h4 class="font-body-md text-white font-medium group-hover:text-secondary transition-none">
+                제24화 · 새벽의 색 (The Color of Dawn)
+              </h4>
+</div>
+</div>
+<div class="flex items-center justify-between md:justify-end gap-8 mt-3 md:mt-0 font-label-monospaced text-label-monospaced">
+<span class="text-[#747878]">2026.02.20</span>
+<span class="text-[#747878]">48 PANELS</span>
+<a class="text-white border-b border-secondary pb-0.5 tracking-wider hover:text-secondary transition-none uppercase" href="webtoon.html">
+              [열람하기 / READ]
+            </a>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="group border-b border-[#262626] py-4 px-3 flex flex-col md:flex-row md:items-center justify-between hover:bg-[#141414] transition-none">
+<div class="flex items-center gap-6">
+<div class="w-16 h-12 bg-[#1A1A1A] border border-[#333333] shrink-0 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Interior view of glass greenhouse panes misted over with condensation, faint silhouette of green ferns behind. Fine art sequential panel, moody ambient lighting, silent mood." src="assets/img/7475ec35f0e9e4f0.jpg"/>
+</div>
+<div>
+<div class="font-label-monospaced text-[11px] text-[#A3A3A3]">EPISODE 023</div>
+<h4 class="font-body-md text-white font-medium group-hover:text-secondary transition-none">
+                제23화 · 온실의 잔향 (Resonance of the Greenhouse)
+              </h4>
+</div>
+</div>
+<div class="flex items-center justify-between md:justify-end gap-8 mt-3 md:mt-0 font-label-monospaced text-label-monospaced">
+<span class="text-[#747878]">2026.02.13</span>
+<span class="text-[#747878]">52 PANELS</span>
+<a class="text-white border-b border-[#444748] pb-0.5 tracking-wider hover:text-white hover:border-white transition-none uppercase" href="webtoon.html">
+              [열람하기 / READ]
+            </a>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="group border-b border-[#262626] py-4 px-3 flex flex-col md:flex-row md:items-center justify-between hover:bg-[#141414] transition-none">
+<div class="flex items-center gap-6">
+<div class="w-16 h-12 bg-[#1A1A1A] border border-[#333333] shrink-0 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Ancient engraved stone milestone partially covered in dry moss in a dark courtyard. Expressive monochrome graphic novel art, high tactile texture, quiet introspection." src="assets/img/ec35991c0fa69f2a.jpg"/>
+</div>
+<div>
+<div class="font-label-monospaced text-[11px] text-[#A3A3A3]">EPISODE 022</div>
+<h4 class="font-body-md text-white font-medium group-hover:text-secondary transition-none">
+                제22화 · 숨겨진 표석 (The Hidden Milestone)
+              </h4>
+</div>
+</div>
+<div class="flex items-center justify-between md:justify-end gap-8 mt-3 md:mt-0 font-label-monospaced text-label-monospaced">
+<span class="text-[#747878]">2026.02.06</span>
+<span class="text-[#747878]">44 PANELS</span>
+<a class="text-white border-b border-[#444748] pb-0.5 tracking-wider hover:text-white hover:border-white transition-none uppercase" href="webtoon.html">
+              [열람하기 / READ]
+            </a>
+</div>
+</div>
+<!-- Row 4 -->
+<div class="group border-b border-[#262626] py-4 px-3 flex flex-col md:flex-row md:items-center justify-between hover:bg-[#141414] transition-none">
+<div class="flex items-center gap-6">
+<div class="w-16 h-12 bg-[#1A1A1A] border border-[#333333] shrink-0 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="A long dark cloister corridor with arched stone ceilings and rhythmic shafts of evening moonlight on polished flagstones. Architectural sequential art, stark and solemn." src="assets/img/3f405da154e28ce1.jpg"/>
+</div>
+<div>
+<div class="font-label-monospaced text-[11px] text-[#A3A3A3]">EPISODE 021</div>
+<h4 class="font-body-md text-white font-medium group-hover:text-secondary transition-none">
+                제21화 · 침묵의 회랑 (Corridor of Silence)
+              </h4>
+</div>
+</div>
+<div class="flex items-center justify-between md:justify-end gap-8 mt-3 md:mt-0 font-label-monospaced text-label-monospaced">
+<span class="text-[#747878]">2026.01.30</span>
+<span class="text-[#747878]">50 PANELS</span>
+<a class="text-white border-b border-[#444748] pb-0.5 tracking-wider hover:text-white hover:border-white transition-none uppercase" href="webtoon.html">
+              [열람하기 / READ]
+            </a>
+</div>
+</div>
+<!-- Row 5 -->
+<div class="group border-b border-[#262626] py-4 px-3 flex flex-col md:flex-row md:items-center justify-between hover:bg-[#141414] transition-none">
+<div class="flex items-center gap-6">
+<div class="w-16 h-12 bg-[#1A1A1A] border border-[#333333] shrink-0 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Reflective glass vessel capturing glowing specks of starlight inside an empty room. Minimalist painterly comic cell, high contrast deep ink black and luminous soft white particles." src="assets/img/3db839b65a2fa55a.jpg"/>
+</div>
+<div>
+<div class="font-label-monospaced text-[11px] text-[#A3A3A3]">EPISODE 020</div>
+<h4 class="font-body-md text-white font-medium group-hover:text-secondary transition-none">
+                제20화 · 별빛의 채집 (Harvest of Starlight)
+              </h4>
+</div>
+</div>
+<div class="flex items-center justify-between md:justify-end gap-8 mt-3 md:mt-0 font-label-monospaced text-label-monospaced">
+<span class="text-[#747878]">2026.01.23</span>
+<span class="text-[#747878]">46 PANELS</span>
+<a class="text-white border-b border-[#444748] pb-0.5 tracking-wider hover:text-white hover:border-white transition-none uppercase" href="webtoon.html">
+              [열람하기 / READ]
+            </a>
+</div>
+</div>
+<!-- Row 6 -->
+<div class="group border-b border-[#262626] py-4 px-3 flex flex-col md:flex-row md:items-center justify-between hover:bg-[#141414] transition-none">
+<div class="flex items-center gap-6">
+<div class="w-16 h-12 bg-[#1A1A1A] border border-[#333333] shrink-0 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Massive iron-bound chapel gate opening slightly into blinding golden white radiance. Symbolic spiritual comic artwork, high dramatic contrast, sublime editorial texture." src="assets/img/1fd6ed1a7d1fa729.jpg"/>
+</div>
+<div>
+<div class="font-label-monospaced text-[11px] text-[#A3A3A3]">EPISODE 019</div>
+<h4 class="font-body-md text-white font-medium group-hover:text-secondary transition-none">
+                제19화 · 첫 번째 문 (The First Gate)
+              </h4>
+</div>
+</div>
+<div class="flex items-center justify-between md:justify-end gap-8 mt-3 md:mt-0 font-label-monospaced text-label-monospaced">
+<span class="text-[#747878]">2026.01.16</span>
+<span class="text-[#747878]">48 PANELS</span>
+<a class="text-white border-b border-[#444748] pb-0.5 tracking-wider hover:text-white hover:border-white transition-none uppercase" href="webtoon.html">
+              [열람하기 / READ]
+            </a>
+</div>
+</div>
+</div>
+<!-- Action Button (Bordered action frame, no radius) -->
+<div class="mt-8 flex justify-center">
+<button class="border border-[#333333] hover:border-white hover:bg-white hover:text-black text-white px-8 py-3.5 font-label-monospaced text-label-monospaced tracking-widest uppercase transition-none">
+          [이전 회차 더보기 / LOAD PREVIOUS EPISODES (1-18) +]
+        </button>
+</div>
+</section>
+<!-- --------------------------------------------------------------------- -->
+<!-- SECTION 5: FOOTER (Matching Homepage Screen 2 in dark mode palette)   -->
+<!-- --------------------------------------------------------------------- -->
+<footer class="pt-16 mt-8 border-t border-[#262626]">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-16">
+<!-- Column 1: Identity & Vision -->
+<div>
+<div class="font-label-monospaced text-label-monospaced text-[#747878] uppercase mb-3">
+            01 / IDENTITY &amp; VISION
+          </div>
+<h4 class="font-headline-md text-headline-md text-white tracking-wider mb-2">
+            SIDE BY SIDE
+          </h4>
+<p class="font-body-sm text-body-sm text-[#A3A3A3] leading-relaxed mb-4">
+            문화예술교회 Side by Side는 고립된 창작 현장의 예술인과 웹툰 작가를 조명하며, 일상과 영성, 현대미술의 경계를 묻는 동시대적 예술 공동체입니다.
+          </p>
+<div class="font-label-monospaced text-[11px] text-[#747878]">
+            DIRECTOR: REV. MIN-WOO CHOI<br/>
+            CHIEF CURATOR: SUNG-MIN KWON
+          </div>
+</div>
+<!-- Column 2: Directory -->
+<div>
+<div class="font-label-monospaced text-label-monospaced text-[#747878] uppercase mb-3">
+            02 / DIRECTORY
+          </div>
+<ul class="space-y-2 font-label-monospaced text-label-monospaced text-[#A3A3A3]">
+<li><a class="hover:text-white transition-none" href="about.html#gatherings">[공동체 소개 / STATEMENT]</a></li>
+<li><a class="hover:text-white transition-none" href="about.html#gatherings">[주일 예배 및 예술가 모임 안내]</a></li>
+<li><a class="hover:text-white transition-none" href="about.html#programs">[창작자 레지던시 2026 모집]</a></li>
+<li><a class="hover:text-white transition-none" href="webtoon.html">[연재 제안 및 원고 투고]</a></li>
+<li><a class="hover:text-white transition-none" href="#">[기관 후원 및 아카이브 기증]</a></li>
+</ul>
+</div>
+<!-- Column 3: Navigation -->
+<div>
+<div class="font-label-monospaced text-label-monospaced text-[#747878] uppercase mb-3">
+            03 / NAVIGATION
+          </div>
+<ul class="space-y-2 font-label-monospaced text-label-monospaced text-[#A3A3A3]">
+<li><a class="hover:text-white transition-none" href="exhibition.html">EXHIBITIONS &amp; ROTATIONS</a></li>
+<li><a class="hover:text-white transition-none" href="artists.html">ARTISTS INDEX</a></li>
+<li><a class="text-white border-b border-secondary transition-none" href="webtoon.html">WEBTOON SERIALS (ROOM 04)</a></li>
+<li><a class="hover:text-white transition-none" href="#">ESSAYS &amp; CRITICISM</a></li>
+<li><a class="hover:text-white transition-none" href="#">SANCTUM ARCHIVE CODES</a></li>
+</ul>
+</div>
+<!-- Column 4: Visit & Contact -->
+<div>
+<div class="font-label-monospaced text-label-monospaced text-[#747878] uppercase mb-3">
+            04 / VISIT &amp; CONTACT
+          </div>
+<div class="font-body-sm text-body-sm text-[#A3A3A3] space-y-2">
+<p class="text-white font-medium">SIDE BY SIDE ART SPACE</p>
+<p>서울특별시 성동구 성수이로 아틀리에길 24</p>
+<p class="font-label-monospaced text-[11px] text-[#747878]">OPENING HOURS:</p>
+<p class="font-label-monospaced text-[12px] text-white">WED–SUN 11:00 — 19:00 (MON, TUE CLOSED)</p>
+<div class="pt-2 font-label-monospaced text-[11px]">
+<a class="text-secondary hover:underline" href="mailto:contact@sidebyside.art">
+                contact@sidebyside.art
+              </a>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Hairline Bar -->
+<div class="border-t border-[#262626] py-6 flex flex-col md:flex-row items-center justify-between text-[#747878] font-label-monospaced text-[11px]">
+<div>
+          © 2026 SIDE BY SIDE ART SPACE &amp; CULTURAL COMMUNITY. ALL RIGHTS RESERVED.
+        </div>
+<div class="flex items-center gap-6 mt-3 md:mt-0">
+<span>CURATORIAL PROTOCOL: WHITE CUBE / SEQUENTIAL 1.0</span>
+<a class="text-white hover:text-secondary uppercase transition-none" href="#">
+            [TOP ↑]
+          </a>
+</div>
+</div>
+</footer>
+</main>
+</body></html>

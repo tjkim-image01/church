@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>한서윤 / Han Seoyun — Side by Side (문화예술교회 / Contemporary Art Space)</title>
+<!-- Font Dependencies: Bebas Neue, Noto Sans KR, JetBrains Mono -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=JetBrains+Mono:wght@400;700&amp;family=Noto+Sans+KR:wght@300;400;500;700&amp;family=Noto+Sans:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<link href="assets/css/artist.css" rel="stylesheet"/>
+<style>
+    * {
+      border-radius: 0 !important;
+      box-shadow: none !important;
+    }
+    ::selection {
+      background-color: #2A2580;
+      color: #ffffff;
+    }
+    .accent-link {
+      transition: none;
+    }
+    .accent-link:hover {
+      color: #2A2580;
+      border-color: #2A2580;
+    }
+  </style>
+<link href="assets/css/mobile.css" rel="stylesheet"/>
+<script defer src="assets/js/menu.js"></script>
+</head>
+<body class="bg-background text-on-background selection:bg-secondary selection:text-surface antialiased overflow-x-hidden">
+<div class="sbs-mbar"><a href="index.html">Side by Side</a><button type="button" aria-expanded="false" aria-controls="sbs-menu">MENU</button></div>
+<nav class="sbs-menu" id="sbs-menu" aria-label="Mobile"><a href="index.html">Home</a><a href="exhibition.html">Exhibitions</a><a href="artists.html">Artists</a><a href="webtoon.html">Webtoon</a><a href="work.html">Works</a><a href="about.html#programs">Programs</a><a href="about.html">About</a><small>문화예술교회 · Art Space</small></nav>
+<!-- LEFT FIXED STRIP (SideNavBar Blueprint) -->
+<aside class="sbs-rail fixed top-0 left-0 h-screen w-16 md:w-20 border-r border-outline-variant bg-background flex flex-col justify-between items-center py-8 z-40">
+<!-- Top Index & Status -->
+<div class="flex flex-col items-center gap-3">
+<span class="font-label-monospaced-bold text-label-monospaced-bold text-primary tracking-widest text-center leading-tight">№ 02</span>
+<div class="w-2 h-px bg-primary"></div>
+<span class="font-label-monospaced text-label-monospaced text-on-surface-variant -rotate-90 tracking-widest mt-6 whitespace-nowrap">ARTIST ARCHIVE</span>
+</div>
+<!-- Rotated Typographic Mark "SIDE BY SIDE" -->
+<div class="flex items-center justify-center -rotate-90 origin-center whitespace-nowrap">
+<span class="font-display-xl text-headline-md tracking-widest text-primary uppercase">SIDE BY SIDE</span>
+</div>
+<!-- Bottom Status / Rotation -->
+<div class="flex flex-col items-center gap-4">
+<span class="font-label-monospaced-bold text-label-monospaced-bold text-secondary tracking-widest">[LIVE]</span>
+<div class="w-4 h-px bg-outline-variant"></div>
+<span class="font-label-monospaced text-label-monospaced text-on-surface-variant -rotate-90 tracking-widest mb-4 whitespace-nowrap">2025.04</span>
+</div>
+</aside>
+<!-- TOP APP BAR / GLOBAL HEADER -->
+<header class="sbs-fhead fixed top-0 left-16 md:left-20 right-0 z-50 bg-background/95 border-b border-outline-variant backdrop-blur-none">
+<div class="px-6 md:px-margin py-2.5 flex justify-between items-start">
+<div class="flex items-center gap-3 font-label-monospaced text-[11px] tracking-wider text-on-surface-variant">
+<span class="font-label-monospaced-bold text-primary">№ 02</span>
+<span>|</span>
+<span>SANCTUARY &amp; WHITE CUBE ARCHIVE · VOL. 2026</span>
+<span class="hidden md:inline">|</span>
+<span class="hidden md:inline">ARTIST ARCHIVE · SEOUL 37.541° N, 127.056° E</span>
+<span class="hidden lg:inline">|</span>
+<span class="hidden lg:inline">RESIDENT: HAN SEOYUN</span>
+</div>
+<div class="flex flex-col items-end text-right font-label-monospaced text-[11px]">
+<span class="sbs-dnav text-on-surface-variant tracking-widest uppercase mb-1.5 block">[INDEX OF SECTIONS]</span>
+<nav class="sbs-dnav flex flex-col items-end gap-1 tracking-wider">
+<a class="text-on-surface-variant hover:text-primary transition-none" href="exhibition.html">01. EXHIBITIONS</a>
+<a class="font-label-monospaced-bold underline transition-none" href="artists.html" style="color: #2A2580; text-decoration-color: #2A2580;">02. ARTISTS</a>
+<a class="text-on-surface-variant hover:text-primary transition-none" href="webtoon.html">03. WEBTOON</a>
+<a class="text-on-surface-variant hover:text-primary transition-none" href="work.html">04. WORKS</a>
+<a class="text-on-surface-variant hover:text-primary transition-none" href="about.html#programs">05. PROGRAMS</a>
+<a class="text-on-surface-variant hover:text-primary transition-none" href="about.html">06. ABOUT</a>
+</nav>
+</div>
+</div>
+</header>
+<!-- MAIN CANVAS CONTENT -->
+<main class="sbs-main ml-16 md:ml-20 pt-36 min-h-screen">
+<!-- HERO SECTION: ARTIST PROFILE & REPUTED CANVAS -->
+<section class="border-b border-outline-variant px-6 md:px-margin pt-12 md:pt-space-xl pb-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left Column: Artist Identity & Statement -->
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div>
+<!-- Monospace Registry Index -->
+<div class="flex items-center gap-2 mb-4">
+<span class="font-label-monospaced-bold text-label-monospaced-bold text-secondary" style="color: #2A2580;">[RESIDENT ARTIST 08]</span>
+<span class="font-label-monospaced text-label-monospaced text-on-surface-variant">/ PAINTING · SEQUENTIAL ART / SEOUL</span>
+</div>
+<!-- Monumental Dual Name -->
+<div class="border-b border-outline-variant pb-6 mb-6">
+<h1 class="text-5xl md:text-6xl font-bold tracking-tight text-primary mb-1" style="font-family: 'Noto Sans KR', sans-serif;">
+                한서윤
+              </h1>
+<div class="font-display-xl text-headline-lg md:text-display-xl text-primary leading-none uppercase tracking-wide">
+                HAN SEOYUN
+              </div>
+</div>
+<!-- One-line Summary -->
+<p class="font-title-sm text-title-sm text-primary mb-8 font-medium">
+              침묵하는 캔버스의 물성과 스크롤되는 서사의 빛 사이를 탐구하는 회화·웹툰 창작자.
+            </p>
+<!-- Statement Pull-Quote with Editorial Hairline Framing -->
+<div class="border-l-2 border-primary pl-6 py-2 my-8 bg-surface-container-low/50">
+<span class="font-label-monospaced-bold text-label-monospaced-bold text-on-surface-variant uppercase tracking-widest block mb-2">
+                작가 노트 (Artist Statement) — 2025
+              </span>
+<blockquote class="font-body-md text-body-md text-primary italic leading-relaxed">
+                “회화의 붓질이 시간의 고요한 침전이라면, 웹툰의 칸은 호흡과 걸음의 분할입니다. 저는 빛이 스며드는 어스름한 공간에서 멈춘 시간과 흐르는 이야기의 경계를 그립니다.”
+              </blockquote>
+</div>
+</div>
+<!-- Metadata List in JetBrains Mono -->
+<div class="pt-6 border-t border-outline-variant grid grid-cols-1 gap-3 font-label-monospaced text-label-monospaced">
+<div class="flex flex-col sm:flex-row sm:justify-between py-1 border-b border-outline-variant/40">
+<span class="text-on-surface-variant uppercase">DISCIPLINE:</span>
+<span class="text-primary font-bold">Oil on Canvas, Digital Sequential Art</span>
+</div>
+<div class="flex flex-col sm:flex-row sm:justify-between py-1 border-b border-outline-variant/40">
+<span class="text-on-surface-variant uppercase">STUDIO:</span>
+<span class="text-primary">Side by Side Residency Space #02, Seongsu-dong</span>
+</div>
+<div class="flex flex-col sm:flex-row sm:justify-between py-1 border-b border-outline-variant/40">
+<span class="text-on-surface-variant uppercase">CONTACT / ARCHIVE:</span>
+<span class="text-primary hover:underline cursor-pointer">seoyun.han@sidebyside.art</span>
+</div>
+<div class="flex items-center gap-6 pt-3">
+<a class="text-primary font-label-monospaced-bold text-label-monospaced-bold border-b border-primary pb-0.5 accent-link" href="#">
+                Instagram (@seoyun_atelier) ↗
+              </a>
+<a class="text-primary font-label-monospaced-bold text-label-monospaced-bold border-b border-primary pb-0.5 accent-link" href="artist.html">
+                Archive Dossier (PDF) ↗
+              </a>
+</div>
+</div>
+</div>
+<!-- Right Column: Representative Hero Fine Art Painting -->
+<div class="lg:col-span-7 flex flex-col justify-start">
+<div class="border border-outline-variant p-4 bg-surface-container-lowest">
+<!-- Hero Artwork Display -->
+<div class="w-full bg-surface-container overflow-hidden">
+<img alt="Representative artwork by Han Seoyun titled Standing Side by Side in the Afternoon" class="w-full h-auto object-cover max-h-[640px]" src="assets/img/075d5ee30811a0a6.jpg"/>
+</div>
+<!-- Wall Placard / Institutional Museum Label -->
+<div class="mt-4 pt-4 border-t border-outline-variant flex flex-col md:flex-row justify-between items-start md:items-end gap-4 font-label-monospaced text-label-monospaced">
+<div class="space-y-1">
+<div class="font-label-monospaced-bold text-label-monospaced-bold text-primary tracking-wider uppercase">
+                  한서윤 / Han Seoyun
+                </div>
+<div class="text-primary italic">
+                  나란히 선 오후 [Standing Side by Side in the Afternoon], 2025
+                </div>
+<div class="text-on-surface-variant">
+                  캔버스에 유채 및 아크릴, 122 × 152 cm
+                </div>
+</div>
+<div class="text-left md:text-right text-on-surface-variant space-y-1">
+<span class="inline-block px-1.5 py-0.5 bg-surface-container-high text-primary font-label-monospaced-bold text-label-monospaced">
+                  ARCHIVE REF. #FA-2025-042
+                </span>
+<div class="text-primary font-label-monospaced-bold text-label-monospaced tracking-widest">
+                  COLLECTION OWNED
+                </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 01: WORKS — CURATED ASYMMETRICAL ARTWORKS GRID -->
+<section class="border-b border-outline-variant px-6 md:px-margin py-space-xl">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end pb-8 border-b border-primary mb-12">
+<div>
+<span class="font-label-monospaced text-label-monospaced text-secondary block mb-1" style="color: #2A2580;">CATALOGUE OF PAINTINGS</span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-primary tracking-wider uppercase">
+            01 / WORKS — PAINTING &amp; FINE ART
+          </h2>
+</div>
+<div class="flex items-center gap-4 mt-4 md:mt-0 font-label-monospaced text-label-monospaced text-on-surface-variant">
+<span>CURATORIAL SELECTION</span>
+<span class="font-label-monospaced-bold text-primary">[06 SELECTED PIECES]</span>
+</div>
+</div>
+<!-- Asymmetrical Editorial Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-y-16 gap-x-8">
+<!-- Work 1: Immersive Off-Center Left (Span 7) -->
+<article class="md:col-span-7 flex flex-col group">
+<div class="border border-outline-variant bg-surface-container-lowest p-3">
+<div class="w-full aspect-[4/3] bg-surface-container overflow-hidden">
+<img alt="Silent Greenhouse by Han Seoyun" class="w-full h-full object-cover filter contrast-[1.02]" src="assets/img/075d5ee30811a0a6.jpg"/>
+</div>
+</div>
+<!-- Wall Label Plaque -->
+<div class="mt-4 pt-3 border-t border-outline-variant font-label-monospaced text-label-monospaced">
+<div class="flex justify-between items-baseline">
+<h3 class="font-label-monospaced-bold text-label-monospaced-bold text-primary">침묵의 온실 [Silent Greenhouse], 2025</h3>
+<span class="text-on-surface-variant">№ 01</span>
+</div>
+<p class="text-on-surface-variant mt-1">Oil on linen, 160 × 130 cm</p>
+<div class="flex justify-between items-center mt-2 text-on-surface-variant">
+<span>INV. #HSY-2025-01</span>
+<a class="text-primary underline accent-link" href="artist.html">[INQUIRE DOSSIER]</a>
+</div>
+</div>
+</article>
+<!-- Work 2: Elevated Narrow Right (Span 5) -->
+<article class="md:col-span-5 flex flex-col md:pt-16 group">
+<div class="border border-outline-variant bg-surface-container-lowest p-3">
+<div class="w-full aspect-square bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A minimalist contemporary oil painting with textured cerulean blue, muted gray, and subtle gesso relief on raw stretched linen. Clean white gallery atmosphere, soft indirect natural daylight, precise architectural balance, austere fine art presentation with no glare." src="assets/img/8d9a5f98901cd2f7.jpg"/>
+</div>
+</div>
+<!-- Wall Label Plaque -->
+<div class="mt-4 pt-3 border-t border-outline-variant font-label-monospaced text-label-monospaced">
+<div class="flex justify-between items-baseline">
+<h3 class="font-label-monospaced-bold text-label-monospaced-bold text-primary">푸른 잔향 [Blue Reverberation], 2024</h3>
+<span class="text-on-surface-variant">№ 02</span>
+</div>
+<p class="text-on-surface-variant mt-1">Acrylic and gesso on canvas, 90 × 90 cm</p>
+<div class="flex justify-between items-center mt-2 text-on-surface-variant">
+<span>INV. #HSY-2024-11</span>
+<a class="text-primary underline accent-link" href="#">[PRIVATE COLLECTION]</a>
+</div>
+</div>
+</article>
+<!-- Work 3: Full Width Exhibition Capture / Threshold (Span 12) -->
+<article class="md:col-span-12 flex flex-col my-4">
+<div class="border border-outline-variant bg-surface-container-lowest p-4">
+<div class="w-full aspect-[21/9] bg-surface-container overflow-hidden">
+<img alt="Exhibition installation capture of Light at the Threshold" class="w-full h-full object-cover" src="assets/img/a0247bba6862e9d7.jpg"/>
+</div>
+</div>
+<!-- Wall Label Plaque -->
+<div class="mt-4 pt-3 border-t border-outline-variant flex flex-col md:flex-row justify-between items-start md:items-center font-label-monospaced text-label-monospaced gap-2">
+<div>
+<div class="font-label-monospaced-bold text-label-monospaced-bold text-primary">
+                경계의 빛 [Light at the Threshold], 2025
+              </div>
+<p class="text-on-surface-variant">Mixed media on canvas, 140 × 110 cm / INSTALLATION VIEW: SIDE BY SIDE MAIN GALLERY</p>
+</div>
+<div class="flex items-center gap-6">
+<span class="text-secondary font-label-monospaced-bold" style="color: #2A2580;">ARCHIVE STATUS: ON VIEW</span>
+<a class="text-primary underline accent-link" href="exhibition.html">[VIEW EXHIBITION RECORD ↗]</a>
+</div>
+</div>
+</article>
+<!-- Work 4: Left Span 4 -->
+<article class="md:col-span-4 flex flex-col group">
+<div class="border border-outline-variant bg-surface-container-lowest p-3">
+<div class="w-full aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="An abstract figurative modern painting showing two silhouetted figures in an architectural room with warm ochre and pale beige impasto layers. Soft natural light, gallery wall display, minimal geometric balance, institutional quality." src="assets/img/800e104f22e5ea69.jpg"/>
+</div>
+</div>
+<!-- Wall Label Plaque -->
+<div class="mt-4 pt-3 border-t border-outline-variant font-label-monospaced text-label-monospaced">
+<div class="flex justify-between items-baseline">
+<h3 class="font-label-monospaced-bold text-label-monospaced-bold text-primary">두 사람의 방 [A Room for Two], 2023</h3>
+<span class="text-on-surface-variant">№ 04</span>
+</div>
+<p class="text-on-surface-variant mt-1">Oil on canvas, 100 × 80 cm</p>
+<div class="flex justify-between items-center mt-2 text-on-surface-variant">
+<span>INV. #HSY-2023-04</span>
+<a class="text-primary underline accent-link" href="#">[ARCHIVE DISCLOSURE]</a>
+</div>
+</div>
+</article>
+<!-- Work 5: Center Span 4 (Shifted) -->
+<article class="md:col-span-4 flex flex-col md:pt-12 group">
+<div class="border border-outline-variant bg-surface-container-lowest p-3">
+<div class="w-full aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A refined stark fine art study featuring layered titanium white and umber brushwork representing an ancient stone cornerstone. Museum presentation, cool neutral background, monochromatic minimalist aesthetic with profound silence." src="assets/img/f78a02e0c4434ab7.jpg"/>
+</div>
+</div>
+<!-- Wall Label Plaque -->
+<div class="mt-4 pt-3 border-t border-outline-variant font-label-monospaced text-label-monospaced">
+<div class="flex justify-between items-baseline">
+<h3 class="font-label-monospaced-bold text-label-monospaced-bold text-primary">기억의 주춧돌 [Foundation of Memory], 2024</h3>
+<span class="text-on-surface-variant">№ 05</span>
+</div>
+<p class="text-on-surface-variant mt-1">Oil on linen, 72 × 60 cm</p>
+<div class="flex justify-between items-center mt-2 text-on-surface-variant">
+<span>INV. #HSY-2024-09</span>
+<a class="text-primary underline accent-link" href="#">[LOAN PROTOCOL]</a>
+</div>
+</div>
+</article>
+<!-- Work 6: Right Span 4 -->
+<article class="md:col-span-4 flex flex-col group">
+<div class="border border-outline-variant bg-surface-container-lowest p-3">
+<div class="w-full aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A luminous atmospheric abstract canvas displaying delicate gradations of ivory white, raw sienna, and subtle deep charcoal lines. Minimalist contemplative modern art piece photographed flat inside a white-cube gallery with pure lighting." src="assets/img/5dccb42b1c6c4cd7.jpg"/>
+</div>
+</div>
+<!-- Wall Label Plaque -->
+<div class="mt-4 pt-3 border-t border-outline-variant font-label-monospaced text-label-monospaced">
+<div class="flex justify-between items-baseline">
+<h3 class="font-label-monospaced-bold text-label-monospaced-bold text-primary">빛의 여운 [Lingering Luminescence], 2026</h3>
+<span class="text-on-surface-variant">№ 06</span>
+</div>
+<p class="text-on-surface-variant mt-1">Pigment and acrylic on canvas, 180 × 140 cm</p>
+<div class="flex justify-between items-center mt-2 text-on-surface-variant">
+<span>INV. #HSY-2026-FUT</span>
+<a class="text-secondary font-label-monospaced-bold accent-link" href="#" style="color: #2A2580;">[UPCOMING PREVIEW]</a>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- SECTION 02: WEBTOON — SEQUENTIAL NARRATIVE & SERIALS -->
+<section class="border-b border-outline-variant px-6 md:px-margin py-space-xl bg-surface">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end pb-8 border-b border-primary mb-12">
+<div>
+<span class="font-label-monospaced text-label-monospaced text-secondary block mb-1" style="color: #2A2580;">DIGITAL SEQUENTIAL ARCHIVE</span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-primary tracking-wider uppercase">
+            02 / WEBTOON — SEQUENTIAL NARRATIVE
+          </h2>
+</div>
+<div class="flex items-center gap-4 mt-4 md:mt-0 font-label-monospaced text-label-monospaced">
+<span class="text-primary font-label-monospaced-bold">[연재 아카이브]</span>
+<span class="text-on-surface-variant">PLATFORM: SIDE BY SIDE WEBTOON ENGINE</span>
+</div>
+</div>
+<!-- Two-Column Editorial Serials -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<!-- Series 1: Garden of Light -->
+<article class="border border-outline-variant bg-surface-container-lowest p-6 md:p-8 flex flex-col md:flex-row gap-8">
+<!-- 3:4 Aspect Ratio Cover -->
+<div class="w-full md:w-56 shrink-0 aspect-[3/4] border border-outline-variant overflow-hidden bg-primary">
+<img alt="Cover art for webtoon Garden of Light by Han Seoyun" class="w-full h-full object-cover" src="assets/img/10dc435bc32c5778.jpg"/>
+</div>
+<!-- Narrative Details -->
+<div class="flex flex-col justify-between flex-grow">
+<div>
+<div class="flex items-center justify-between font-label-monospaced text-label-monospaced pb-2 border-b border-outline-variant">
+<span class="text-secondary font-label-monospaced-bold" style="color: #2A2580;">SERIAL № 01</span>
+<span class="text-on-surface-variant">연재중 / ONGOING (매주 목요일 연재)</span>
+</div>
+<h3 class="text-2xl font-bold text-primary mt-4 mb-1" style="font-family: 'Noto Sans KR', sans-serif;">
+                빛의 정원 <span class="text-xl font-normal text-on-surface-variant">(Garden of Light)</span>
+</h3>
+<div class="font-label-monospaced text-label-monospaced text-on-surface-variant mb-4">
+                PLATFORM: Side by Side Webtoon Archive / Ep. 01 – Ep. 38
+              </div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed mb-6">
+                폐쇄된 식물원 온실에서 발견된 빛의 입자들과 두 이방인의 기록. 회화적 터치와 묵직한 물성의 색채로 전개되는 시각 서사 웹툰.
+              </p>
+</div>
+<div class="pt-4 border-t border-outline-variant flex items-center justify-between">
+<span class="font-label-monospaced text-label-monospaced text-on-surface-variant">
+                GENRE: CONTEMPLATIVE MYSTERY
+              </span>
+<a class="font-label-monospaced-bold text-label-monospaced-bold border-b border-secondary pb-0.5 accent-link" href="webtoon.html" style="color: #2A2580; border-color: #2A2580;">
+                [READ FIRST EPISODE ↗]
+              </a>
+</div>
+</div>
+</article>
+<!-- Series 2: Contours of the Dark Room -->
+<article class="border border-outline-variant bg-surface-container-lowest p-6 md:p-8 flex flex-col md:flex-row gap-8">
+<!-- 3:4 Aspect Ratio Cover -->
+<div class="w-full md:w-56 shrink-0 aspect-[3/4] border border-outline-variant overflow-hidden bg-surface-container flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Graphic novel cover with dramatic black and white architectural line drawings, stark silhouettes in a rainy urban alleyway, high-contrast chiaroscuro lighting, editorial manga typography framing." src="assets/img/16390f2ac6b20f37.jpg"/>
+</div>
+<!-- Narrative Details -->
+<div class="flex flex-col justify-between flex-grow">
+<div>
+<div class="flex items-center justify-between font-label-monospaced text-label-monospaced pb-2 border-b border-outline-variant">
+<span class="text-secondary font-label-monospaced-bold" style="color: #2A2580;">SERIAL № 02</span>
+<span class="text-on-surface-variant">연재중 / ONGOING (격주 화요일 연재)</span>
+</div>
+<h3 class="text-2xl font-bold text-primary mt-4 mb-1" style="font-family: 'Noto Sans KR', sans-serif;">
+                어두운 방의 윤곽 <span class="text-xl font-normal text-on-surface-variant">(Contours of the Dark Room)</span>
+</h3>
+<div class="font-label-monospaced text-label-monospaced text-on-surface-variant mb-4">
+                PLATFORM: Side by Side Webtoon Archive / Ep. 01 – Ep. 16
+              </div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed mb-6">
+                도시의 그림자 속에서 사라진 기억의 형태를 추적하는 미스터리 시각 서사. 정밀한 건축적 프레임과 흑백의 극명한 대비.
+              </p>
+</div>
+<div class="pt-4 border-t border-outline-variant flex items-center justify-between">
+<span class="font-label-monospaced text-label-monospaced text-on-surface-variant">
+                GENRE: NOIR SEQUENTIAL
+              </span>
+<a class="font-label-monospaced-bold text-label-monospaced-bold border-b border-secondary pb-0.5 accent-link" href="#" style="color: #2A2580; border-color: #2A2580;">
+                [VIEW ARCHIVE ↗]
+              </a>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- SECTION 03: EXHIBITIONS & CV — CHRONOLOGICAL TABULAR LIST -->
+<section class="border-b border-outline-variant px-6 md:px-margin py-space-xl">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end pb-8 border-b border-primary mb-8">
+<div>
+<span class="font-label-monospaced text-label-monospaced text-secondary block mb-1" style="color: #2A2580;">CHRONOLOGY &amp; DOSSIER</span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-primary tracking-wider uppercase">
+            03 / EXHIBITIONS &amp; CV
+          </h2>
+</div>
+<div class="flex items-center gap-4 mt-4 md:mt-0 font-label-monospaced text-label-monospaced">
+<span class="text-on-surface-variant">CURRICULUM VITAE (2023–2026)</span>
+<a class="text-primary underline font-bold accent-link" href="#">[DOWNLOAD COMPLETE PDF ↗]</a>
+</div>
+</div>
+<!-- Tabular Chronology List -->
+<div class="border-t border-primary divide-y divide-outline-variant font-label-monospaced">
+<!-- Row 1 -->
+<div class="py-5 grid grid-cols-1 md:grid-cols-12 gap-4 items-center hover:bg-surface-container-low transition-none">
+<div class="md:col-span-2 font-label-monospaced-bold text-label-monospaced-bold text-primary">
+            2026
+          </div>
+<div class="md:col-span-5 font-title-sm text-body-lg text-primary">
+            《웹툰 × 회화: 나란히》
+          </div>
+<div class="md:col-span-3 text-on-surface-variant text-label-monospaced">
+            Side by Side Art Space Main Hall, Seoul
+          </div>
+<div class="md:col-span-2 flex justify-between md:justify-end items-center gap-4">
+<span class="text-secondary font-label-monospaced-bold text-label-monospaced" style="color: #2A2580;">기획 2인전</span>
+<span class="text-primary font-bold">-&gt;</span>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="py-5 grid grid-cols-1 md:grid-cols-12 gap-4 items-center hover:bg-surface-container-low transition-none">
+<div class="md:col-span-2 font-label-monospaced-bold text-label-monospaced-bold text-primary">
+            2025
+          </div>
+<div class="md:col-span-5 font-title-sm text-body-lg text-primary">
+            《침묵의 정원 (Garden of Silence)》
+          </div>
+<div class="md:col-span-3 text-on-surface-variant text-label-monospaced">
+            Gallery White Cube Seongsu, Seoul
+          </div>
+<div class="md:col-span-2 flex justify-between md:justify-end items-center gap-4">
+<span class="text-on-surface-variant text-label-monospaced">개인전</span>
+<span class="text-primary font-bold">-&gt;</span>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="py-5 grid grid-cols-1 md:grid-cols-12 gap-4 items-center hover:bg-surface-container-low transition-none">
+<div class="md:col-span-2 font-label-monospaced-bold text-label-monospaced-bold text-primary">
+            2024
+          </div>
+<div class="md:col-span-5 font-title-sm text-body-lg text-primary">
+            《Seoul Art Book &amp; Comic Fair Focus》
+          </div>
+<div class="md:col-span-3 text-on-surface-variant text-label-monospaced">
+            DDP Art Hall, Seoul
+          </div>
+<div class="md:col-span-2 flex justify-between md:justify-end items-center gap-4">
+<span class="text-on-surface-variant text-label-monospaced">단체전</span>
+<span class="text-primary font-bold">-&gt;</span>
+</div>
+</div>
+<!-- Row 4 -->
+<div class="py-5 grid grid-cols-1 md:grid-cols-12 gap-4 items-center hover:bg-surface-container-low transition-none">
+<div class="md:col-span-2 font-label-monospaced-bold text-label-monospaced-bold text-primary">
+            2024
+          </div>
+<div class="md:col-span-5 font-title-sm text-body-lg text-primary">
+            《경계와 여백》
+          </div>
+<div class="md:col-span-3 text-on-surface-variant text-label-monospaced">
+            Space Oksu, Seoul
+          </div>
+<div class="md:col-span-2 flex justify-between md:justify-end items-center gap-4">
+<span class="text-on-surface-variant text-label-monospaced">기획전</span>
+<span class="text-primary font-bold">-&gt;</span>
+</div>
+</div>
+<!-- Row 5 -->
+<div class="py-5 grid grid-cols-1 md:grid-cols-12 gap-4 items-center hover:bg-surface-container-low transition-none">
+<div class="md:col-span-2 font-label-monospaced-bold text-label-monospaced-bold text-primary">
+            2023
+          </div>
+<div class="md:col-span-5 font-title-sm text-body-lg text-primary">
+            《신진 예술가 연례 리뷰》
+          </div>
+<div class="md:col-span-3 text-on-surface-variant text-label-monospaced">
+            Art Center Nabi, Seoul
+          </div>
+<div class="md:col-span-2 flex justify-between md:justify-end items-center gap-4">
+<span class="text-on-surface-variant text-label-monospaced">단체전</span>
+<span class="text-primary font-bold">-&gt;</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ARTIST LINKS & PREV/NEXT REPOSITORY NAVIGATION -->
+<section class="border-b border-outline-variant px-6 md:px-margin py-12 bg-surface-container-lowest">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 font-label-monospaced text-label-monospaced border-b border-outline-variant pb-8 mb-8">
+<div class="flex items-center gap-2">
+<span class="text-on-surface-variant">DIRECT CONTACT &amp; ARCHIVE REPO:</span>
+</div>
+<div class="flex flex-wrap items-center gap-6">
+<a class="text-primary border-b border-primary pb-0.5 accent-link" href="#">[INSTAGRAM @SEOYUN_ATELIER]</a>
+<span class="text-outline-variant">·</span>
+<a class="text-primary border-b border-primary pb-0.5 accent-link" href="#">[PORTFOLIO ARCHIVE PDF]</a>
+<span class="text-outline-variant">·</span>
+<a class="text-primary border-b border-primary pb-0.5 accent-link" href="#">[CONTACT ATELIER]</a>
+</div>
+</div>
+<!-- Chronological Artist Step Switcher -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 font-label-monospaced">
+<a class="border border-outline-variant p-6 flex flex-col justify-between hover:border-primary transition-none" href="artist.html">
+<span class="text-on-surface-variant text-label-monospaced mb-2">← PREVIOUS RESIDENT ARTIST</span>
+<span class="font-headline-md text-headline-md text-primary tracking-wider">
+            김지원 (KIM JI-WON)
+          </span>
+<span class="text-on-surface-variant text-label-monospaced mt-2">Sculpture &amp; Spatial Architecture · № 07</span>
+</a>
+<a class="border border-outline-variant p-6 flex flex-col justify-between text-left md:text-right hover:border-primary transition-none" href="artist.html">
+<span class="text-on-surface-variant text-label-monospaced mb-2">NEXT RESIDENT ARTIST →</span>
+<span class="font-headline-md text-headline-md text-primary tracking-wider">
+            박민규 (MIN KYU PARK)
+          </span>
+<span class="text-on-surface-variant text-label-monospaced mt-2">Lithography &amp; Digital Media · № 09</span>
+</a>
+</div>
+</section>
+<!-- FOOTER (Institutional Blueprint Matching Homepage) -->
+<footer class="w-full border-t border-outline-variant py-space-xl px-6 md:px-margin grid grid-cols-1 md:grid-cols-4 gap-gutter bg-background">
+<!-- Col 1: Identity & Church Art Space -->
+<div class="space-y-4">
+<div class="font-headline-md text-headline-md tracking-wider text-primary">
+          SIDE BY SIDE / 문화예술교회
+        </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          동시대 예술의 침묵과 영성, 그리고 연속적 서사의 가능성을 탐구하는 독립 예술 플랫폼 및 화이트 큐브 아카이브.
+        </p>
+<div class="font-label-monospaced text-label-monospaced text-secondary" style="color: #2A2580;">
+          EST. 2024 — ARCHIVE ID #SBS-SEL-02
+        </div>
+</div>
+<!-- Col 2: Directory Links -->
+<div class="space-y-3 font-label-monospaced text-label-monospaced">
+<div class="font-label-monospaced-bold text-label-monospaced-bold text-primary tracking-widest pb-1 border-b border-outline-variant">
+          COLLECTION PROTOCOL
+        </div>
+<ul class="space-y-2 text-on-surface-variant">
+<li><a class="hover:text-secondary accent-link" href="#">COLLECTION POLICY</a></li>
+<li><a class="hover:text-secondary accent-link" href="#">PROVENANCE INQUIRIES</a></li>
+<li><a class="hover:text-secondary accent-link" href="#">LOAN PROTOCOLS</a></li>
+<li><a class="hover:text-secondary accent-link" href="#">IMPRINT &amp; ARCHIVE ID</a></li>
+</ul>
+</div>
+<!-- Col 3: Institutional Navigation -->
+<div class="space-y-3 font-label-monospaced text-label-monospaced">
+<div class="font-label-monospaced-bold text-label-monospaced-bold text-primary tracking-widest pb-1 border-b border-outline-variant">
+          INDEX &amp; REGISTRY
+        </div>
+<ul class="space-y-2 text-on-surface-variant">
+<li><a class="hover:text-secondary accent-link" href="exhibition.html">01. PERMANENT ROTATION</a></li>
+<li><a class="text-primary font-bold underline" href="artists.html">02. ARTISTS REGISTER (ACTIVE)</a></li>
+<li><a class="hover:text-secondary accent-link" href="webtoon.html">03. WEBTOON SERIALS</a></li>
+<li><a class="hover:text-secondary accent-link" href="#">04. PUBLIC LECTURES &amp; SALON</a></li>
+</ul>
+</div>
+<!-- Col 4: Visit & Location -->
+<div class="space-y-3 font-label-monospaced text-label-monospaced">
+<div class="font-label-monospaced-bold text-label-monospaced-bold text-primary tracking-widest pb-1 border-b border-outline-variant">
+          VISIT &amp; CONTACT
+        </div>
+<div class="text-on-surface-variant leading-relaxed">
+          서울특별시 성동구 성수동 아틀리에길 24<br/>
+          Side by Side Main Gallery &amp; Archive<br/>
+          화요일 – 일요일 11:00 – 19:00 (월요일 휴관)<br/>
+          contact@sidebyside.art
+        </div>
+<div class="pt-2 text-on-surface-variant text-[11px]">
+          © 2025 ARCHIVE FOUNDATION. INSTITUTIONAL INVENTORY DISCLOSURE ALL RIGHTS RESERVED.
+        </div>
+</div>
+</footer>
+</main>
+</body></html>

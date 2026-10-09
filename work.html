@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Side by Side — 나란히 선 오후 (Artwork Detail)</title>
+  <!-- Google Fonts: Bebas Neue, Noto Sans KR, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="assets/css/work.css" rel="stylesheet"/>
+<style>
+    body {
+      background-color: #FAFAFA;
+      color: #111111;
+      font-family: 'Noto Sans KR', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    /* Inviolable system styling: No shadows, no rounded corners, hairlines */
+    * {
+      border-radius: 0px !important;
+      box-shadow: none !important;
+    }
+    .vertical-brand {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+    }
+    .indigo-link {
+      text-decoration: underline;
+      text-decoration-color: #2A2580;
+      text-decoration-thickness: 1.5px;
+      text-underline-offset: 4px;
+    }
+    .indigo-link-active {
+      color: #111111;
+      text-decoration: underline;
+      text-decoration-color: #2A2580;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 5px;
+    }
+    .gallery-specimen-border {
+      border: 1px solid #EBEBEB;
+    }
+  </style>
+<link href="assets/css/mobile.css" rel="stylesheet"/>
+<script defer src="assets/js/menu.js"></script>
+</head>
+<body class="relative bg-gallery text-ink selection:bg-indigoAccent selection:text-white">
+<div class="sbs-mbar"><a href="index.html">Side by Side</a><button type="button" aria-expanded="false" aria-controls="sbs-menu">MENU</button></div>
+<nav class="sbs-menu" id="sbs-menu" aria-label="Mobile"><a href="index.html">Home</a><a href="exhibition.html">Exhibitions</a><a href="artists.html">Artists</a><a href="webtoon.html">Webtoon</a><a href="work.html" aria-current="page">Works</a><a href="about.html#programs">Programs</a><a href="about.html">About</a><small>문화예술교회 · Art Space</small></nav>
+
+  <!-- =========================================================================
+       FIXED LEFT EDGE: Vertical Rotated Logo & Coordinates
+       ========================================================================= -->
+  <aside class="sbs-rail fixed left-0 top-0 bottom-0 w-16 md:w-20 border-r border-hairline bg-gallery z-50 flex flex-col justify-between items-center py-8 select-none">
+    <div class="flex flex-col items-center gap-2">
+      <span class="font-mono text-[10px] tracking-widest text-muted"># 01</span>
+      <div class="w-[1px] h-8 bg-hairline"></div>
+    </div>
+    
+    <div class="my-auto py-6">
+      <h1 class="vertical-brand font-bebas text-2xl md:text-3xl tracking-[0.25em] text-ink whitespace-nowrap">
+        SIDE BY SIDE
+      </h1>
+      <p class="vertical-brand font-mono text-[9px] tracking-widest text-muted uppercase mt-6 whitespace-nowrap">
+        문화예술공동체 · ART SPACE
+      </p>
+    </div>
+
+    <div class="flex flex-col items-center gap-3">
+      <span class="w-1.5 h-1.5 bg-ink"></span>
+      <span class="font-mono text-[8px] tracking-widest text-muted uppercase">[LIVE]</span>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       FIXED TOP-RIGHT: Vertical Uppercase Text Menu
+       (EXHIBITIONS, ARTISTS, WEBTOON, WORKS, PROGRAMS, ABOUT)
+       'WORKS' is the current active section underlined in indigo #2A2580
+       ========================================================================= -->
+  <header class="sbs-fhead fixed top-6 right-8 md:right-12 z-50 text-right select-none bg-gallery/90 backdrop-blur-none pl-4 pb-2">
+    <div class="sbs-dnav font-mono text-[9px] tracking-[0.2em] text-muted mb-2 uppercase">
+      [INDEX OF SECTIONS]
+    </div>
+    <nav class="sbs-dnav flex flex-col items-end space-y-1 font-mono text-[11px] tracking-[0.18em] uppercase">
+      <a href="exhibition.html" class="text-muted hover:text-ink transition-none">
+        01. EXHIBITIONS
+      </a>
+      <a href="artists.html" class="text-muted hover:text-ink transition-none">
+        02. ARTISTS
+      </a>
+      <a href="webtoon.html" class="text-muted hover:text-ink transition-none">
+        03. WEBTOON
+      </a>
+      <!-- Active Link for Current Page: Underlined in indigo #2A2580 -->
+      <a href="work.html" class="indigo-link-active font-medium text-ink">
+        04. WORKS
+      </a>
+      <a href="about.html#programs" class="text-muted hover:text-ink transition-none">
+        05. PROGRAMS
+      </a>
+      <a href="about.html#visit" class="text-muted hover:text-ink transition-none">
+        06. ABOUT &amp; VISIT
+      </a>
+    </nav>
+  </header>
+
+  <!-- =========================================================================
+       MAIN CONTENT CANVAS (Left offset for side rail)
+       ========================================================================= -->
+  <main class="sbs-main ml-16 md:ml-20 min-h-screen flex flex-col justify-between">
+
+    <!-- Top Archival Protocol & Breadcrumbs Bar -->
+    <div class="w-full border-b border-hairline py-4 px-6 md:px-14 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 font-mono text-[10px] tracking-widest text-muted uppercase">
+      <div class="flex items-center gap-4">
+        <span>SANCTUARY &amp; WHITE CUBE ARCHIVE · VOL. 2026</span>
+        <span class="hidden md:inline text-hairline">|</span>
+        <span class="hidden md:inline">COLLECTION REF: #AR-2026-089</span>
+      </div>
+      <div class="pr-36 md:pr-48 flex items-center gap-3">
+        <span>SEOUL, KOREA</span>
+        <span>·</span>
+        <span>ROOM 01/04</span>
+      </div>
+    </div>
+
+    <!-- Gallery Room Space (Generous white cube wall surrounding the painting) -->
+    <section class="w-full px-6 md:px-16 pt-16 md:pt-24 pb-16 max-w-7xl mx-auto flex-1 flex flex-col justify-center">
+      
+      <!-- Back / Breadcrumb Navigation -->
+      <div class="mb-10 font-mono text-[11px] tracking-wider text-muted flex items-center gap-4">
+        <a href="work.html" class="hover:text-ink underline transition-none">← RETURN TO WORKS CATALOGUE</a>
+        <span>/</span>
+        <span class="text-ink">NOW ON VIEW — GALLERY ROTATION NO. 44</span>
+      </div>
+
+      <!-- WHITE CUBE GALLERY WALL: Single Large Centered Painting with generous whitespace -->
+      <div class="w-full bg-white gallery-specimen-border p-6 sm:p-12 md:p-20 relative">
+        <div class="max-w-4xl mx-auto flex flex-col items-center">
+          
+          <!-- Large Centered Artwork -->
+          <div class="w-full flex justify-center">
+            <img 
+              src="assets/img/cbfb12870f0f30f1.jpg" 
+              alt="한도윤 — 나란히 선 오후 (2026)" 
+              class="max-h-[640px] w-auto object-contain gallery-specimen-border select-none"
+            />
+          </div>
+
+          <!-- Museum Wall Label Block (Lower Right Alignment) -->
+          <div class="w-full mt-10 md:mt-12 flex justify-end">
+            <div class="border-l-2 border-ink pl-5 py-1 text-left font-mono tracking-wider max-w-sm">
+              <div class="text-[10px] text-muted tracking-widest uppercase mb-1">
+                [EXHIBITION SPECIMEN LABEL · 01/04]
+              </div>
+              <h2 class="text-[15px] font-semibold text-ink uppercase tracking-wide">
+                한도윤 / DOYOUN HAN
+              </h2>
+              <div class="text-[13px] text-ink font-serif italic mt-0.5">
+                나란히 선 오후 <span class="not-italic font-mono text-[11px] text-muted">(Standing Side by Side in the Afternoon)</span>
+              </div>
+              <div class="text-[11px] text-ink mt-2 leading-relaxed">
+                <div>2026</div>
+                <div>캔버스에 아크릴 및 유채 (Acrylic and oil on canvas)</div>
+                <div>130.3 × 97 cm</div>
+                <div class="text-[10px] text-muted mt-1">Side by Side Studio Residency Specimen No. 4</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Curatorial Text & Commentary -->
+      <div class="mt-14 max-w-4xl mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 border-t border-hairline pt-10">
+        
+        <div class="md:col-span-4 font-mono text-xs text-muted tracking-widest uppercase">
+          <div class="text-ink font-semibold text-sm mb-1">[WORK STATEMENT]</div>
+          <div>순수회화와 서사의 조우</div>
+          <div class="mt-4 text-[11px] leading-relaxed">
+            전시: 웹툰 × 회화: 나란히<br>
+            위치: Side by Side Main Hall (B1-1F)<br>
+            아카이브 코드: #SBS-WD-2026
+          </div>
+        </div>
+
+        <div class="md:col-span-8 space-y-4 text-[14px] leading-relaxed text-ink font-light">
+          <p>
+            ‘나란히 선 오후’는 서로 다른 호흡과 결을 지닌 두 인물이 마주하는 침묵의 순간을 응시합니다. 한도윤 작가는 웹툰 특유의 빠른 컷 분할과 동적인 서사 구성에서 잠시 물러나, 화이트 큐브의 고요한 백색 벽면 위에서 시간의 흐름을 멈추어 세웁니다.
+          </p>
+          <p>
+            캔버스 표면의 거친 질감과 미세하게 스며든 아크릴 층은 디지털 스크린 너머의 서사적 주인공들이 실제 공간의 빛과 공기를 호흡하는 지점을 드러냅니다. 둘이 나란히 서 있다는 것은 단순한 물리적 배치가 아닌, 고립된 개인들이 거룩한 침묵 안에서 서로의 존재를 긍정하는 공동체적 연대의 은유입니다.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Previous / Next Artwork Pagination Links (No buttons, clean text links) -->
+      <div class="mt-16 max-w-4xl mx-auto w-full border-t border-b border-hairline py-6 flex justify-between items-center font-mono text-xs md:text-sm tracking-widest uppercase">
+        <a href="work.html" class="indigo-link font-medium text-ink hover:text-indigoAccent transition-none">
+          ← 이전 작품 (PREV: 무제 [빛과 침묵])
+        </a>
+        <span class="text-muted text-[11px]">SPECIMEN 02 OF 12</span>
+        <a href="work.html" class="indigo-link font-medium text-ink hover:text-indigoAccent transition-none">
+          다음 작품 (NEXT: 심야편의점 Ep.12) →
+        </a>
+      </div>
+
+      <!-- =======================================================================
+           MORE FROM THIS ARTIST: 4 Works Row
+           ======================================================================= -->
+      <section class="mt-20 max-w-4xl mx-auto w-full">
+        <div class="flex justify-between items-baseline border-b border-ink pb-3 mb-8">
+          <h3 class="font-bebas text-2xl md:text-3xl tracking-widest text-ink">
+            MORE FROM THIS ARTIST
+          </h3>
+          <span class="font-mono text-[10px] tracking-widest text-muted uppercase">
+            HAN DOYOUN MONOGRAPHIC ARCHIVE (4 PIECES)
+          </span>
+        </div>
+
+        <!-- 4 Grid Columns: No rounded corners, no shadows, museum caption format -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+          
+          <!-- Work 1 -->
+          <article class="flex flex-col group">
+            <div class="bg-white gallery-specimen-border p-2">
+              <img 
+                src="assets/img/79de76c9de11a6a8.jpg" 
+                alt="무제 (침묵의 벽)" 
+                class="w-full aspect-[3/4] object-cover"
+              />
+            </div>
+            <div class="mt-3 font-mono text-left tracking-wide">
+              <div class="text-[11px] font-semibold text-ink">한도윤 / DOYOUN HAN</div>
+              <div class="text-[12px] italic text-ink">무제 (침묵의 벽), 2025</div>
+              <div class="text-[10px] text-muted mt-1 leading-tight">
+                혼합재료, 90.9 × 72.7 cm<br>
+                <span class="text-[9px] uppercase">REF. #HD-2025-01</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Work 2 -->
+          <article class="flex flex-col group">
+            <div class="bg-white gallery-specimen-border p-2">
+              <img 
+                src="assets/img/6c87b387e44dad1f.jpg" 
+                alt="창가의 여운" 
+                class="w-full aspect-[3/4] object-cover"
+              />
+            </div>
+            <div class="mt-3 font-mono text-left tracking-wide">
+              <div class="text-[11px] font-semibold text-ink">한도윤 / DOYOUN HAN</div>
+              <div class="text-[12px] italic text-ink">창가의 여운, 2025</div>
+              <div class="text-[10px] text-muted mt-1 leading-tight">
+                캔버스에 유채, 116.8 × 91 cm<br>
+                <span class="text-[9px] uppercase">REF. #HD-2025-04</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Work 3 -->
+          <article class="flex flex-col group">
+            <div class="bg-white gallery-specimen-border p-2">
+              <img 
+                src="assets/img/2a928730bef258af.jpg" 
+                alt="공동의 시선" 
+                class="w-full aspect-[3/4] object-cover"
+              />
+            </div>
+            <div class="mt-3 font-mono text-left tracking-wide">
+              <div class="text-[11px] font-semibold text-ink">한도윤 / DOYOUN HAN</div>
+              <div class="text-[12px] italic text-ink">공동의 시선, 2026</div>
+              <div class="text-[10px] text-muted mt-1 leading-tight">
+                리넨에 아크릴, 100 × 80.3 cm<br>
+                <span class="text-[9px] uppercase">REF. #HD-2026-02</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Work 4 -->
+          <article class="flex flex-col group">
+            <div class="bg-white gallery-specimen-border p-2">
+              <img 
+                src="assets/img/b859412238250d4f.jpg" 
+                alt="새벽 복도의 단면" 
+                class="w-full aspect-[3/4] object-cover"
+              />
+            </div>
+            <div class="mt-3 font-mono text-left tracking-wide">
+              <div class="text-[11px] font-semibold text-ink">한도윤 / DOYOUN HAN</div>
+              <div class="text-[12px] italic text-ink">새벽 복도의 단면, 2026</div>
+              <div class="text-[10px] text-muted mt-1 leading-tight">
+                캔버스에 유채, 130.3 × 97 cm<br>
+                <span class="text-[9px] uppercase">REF. #HD-2026-07</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Archival Monograph Link -->
+        <div class="mt-10 text-right font-mono text-xs tracking-widest uppercase">
+          <a href="artist.html" class="indigo-link font-semibold text-ink hover:text-indigoAccent transition-none">
+            작가 아카이브 및 전작 인벤토리 열람 [VIEW COMPLETE ARTIST DOSSIER] →
+          </a>
+        </div>
+      </section>
+
+    </section>
+
+    <!-- =========================================================================
+         IDENTICAL FOOTER (From Homepage Side by Side)
+         No icons, 4 columns, mono labels, Bebas Neue brand mark
+         ========================================================================= -->
+    <footer class="w-full border-t border-hairline bg-gallery py-16 px-6 md:px-14">
+      <div class="max-w-7xl mx-auto">
+        
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-8 mb-16">
+          
+          <!-- Col 1: Identity & Vision -->
+          <div>
+            <div class="font-mono text-[10px] text-muted tracking-widest uppercase mb-3">
+              01 / IDENTITY &amp; VISION
+            </div>
+            <h4 class="font-bebas text-2xl tracking-wider text-ink mb-3">
+              SIDE BY SIDE
+            </h4>
+            <p class="text-[12px] leading-relaxed text-muted font-light">
+              문화예술교회 Side by Side는 고립된 창작 현장의 예술인과 웹툰 작가, 시각예술가를 위한 탈교단적 예배와 전시 공간입니다. 우리는 화려한 종교적 외피 대신 순백의 전시장 벽면 위에서 창조의 영성을 나눕니다.
+            </p>
+            <div class="mt-4 font-mono text-[11px] text-indigoAccent uppercase">
+              <a href="about.html#gatherings" class="indigo-link">[SUNDAY LITURGY &amp; GATHERING: 11:00 AM]</a>
+            </div>
+          </div>
+
+          <!-- Col 2: Directory -->
+          <div>
+            <div class="font-mono text-[10px] text-muted tracking-widest uppercase mb-3">
+              02 / DIRECTORY
+            </div>
+            <ul class="space-y-2 font-mono text-[11px] tracking-wider text-ink">
+              <li><a href="about.html#gatherings" class="hover:underline">[공동체 소개 / MISSION STATEMENT]</a></li>
+              <li><a href="about.html#gatherings" class="hover:underline">[주일 예배 및 예술가 모임 안내]</a></li>
+              <li><a href="about.html#programs" class="hover:underline">[창작자 레지던시 프로그램 (입주 공모)]</a></li>
+              <li><a href="about.html#programs" class="hover:underline">[스튜디오 및 화이트큐브 대관 프로토콜]</a></li>
+              <li><a href="about.html#programs" class="hover:underline">[예술인 멘토링 &amp; 창작 심리 상담]</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Navigation -->
+          <div>
+            <div class="font-mono text-[10px] text-muted tracking-widest uppercase mb-3">
+              03 / NAVIGATION
+            </div>
+            <ul class="space-y-2 font-mono text-[11px] tracking-wider text-ink">
+              <li><a href="exhibition.html" class="hover:underline">EXHIBITIONS [기획 및 상설전]</a></li>
+              <li><a href="artists.html" class="hover:underline">ARTISTS [등재 작가 100인]</a></li>
+              <li><a href="webtoon.html" class="indigo-link font-medium">WEBTOON SERIALS [연재 아카이브]</a></li>
+              <li><a href="#essays" class="hover:underline">ESSAYS &amp; CRITICISM [비평지]</a></li>
+              <li><a href="work.html" class="hover:underline">COLLECTION INQUIRIES [작품 소장 문의]</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Visit & Contact -->
+          <div>
+            <div class="font-mono text-[10px] text-muted tracking-widest uppercase mb-3">
+              04 / VISIT &amp; CONTACT
+            </div>
+            <div class="font-mono text-[11px] tracking-wider text-ink space-y-2">
+              <div class="font-semibold">SIDE BY SIDE ART SPACE</div>
+              <div class="text-muted leading-relaxed">
+                서울특별시 성동구 성수이로 아틀리에길 24<br>
+                24 Atelier-gil, Seongsu-dong, Seoul
+              </div>
+              <div class="text-muted pt-1">
+                WEDNESDAY – SUNDAY (11:00 – 19:00)<br>
+                <span class="text-ink font-semibold">CLOSED ON MONDAYS &amp; TUESDAYS</span>
+              </div>
+              <div class="pt-2">
+                <a href="mailto:contact@sidebyside.art" class="indigo-link">E. contact@sidebyside.art</a><br>
+                <a href="#instagram" class="indigo-link">IG. @sidebyside_art</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Colophon / Copyright line -->
+        <div class="border-t border-hairline pt-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 font-mono text-[10px] tracking-widest text-muted uppercase">
+          <div>
+            &copy; 2026 SIDE BY SIDE ART SPACE &amp; CULTURAL COMMUNITY (문화예술교회). ALL RIGHTS RESERVED.
+          </div>
+          <div class="flex items-center gap-6">
+            <span>CURATORIAL PROTOCOL: WHITE CUBE / SEQUENTIAL 1.0</span>
+            <a href="#top" class="text-ink hover:underline">[TOP] ↑</a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+  </main>
+
+</body>
+</html>

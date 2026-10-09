@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ABOUT — SIDE BY SIDE | 문화예술교회 SANCTUARY &amp; WHITE CUBE</title>
+<!-- Google Fonts: Bebas Neue, Noto Sans KR, JetBrains Mono -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=JetBrains+Mono:wght@400;700&amp;family=Noto+Sans+KR:wght@300;400;500;700&amp;family=Noto+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration verbatim -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "tertiary": "#000000",
+            "inverse-on-surface": "#f0f1f1",
+            "surface-container-highest": "#e2e2e2",
+            "primary": "#000000",
+            "on-surface-variant": "#444748",
+            "primary-fixed-dim": "#c8c6c5",
+            "surface-container-low": "#f3f3f4",
+            "surface-tint": "#5f5e5e",
+            "surface-container-high": "#e8e8e8",
+            "on-error": "#ffffff",
+            "surface-variant": "#e2e2e2",
+            "surface-bright": "#f9f9f9",
+            "surface-container": "#eeeeee",
+            "on-tertiary-container": "#848481",
+            "on-surface": "#1a1c1c",
+            "background": "#f9f9f9",
+            "on-secondary": "#ffffff",
+            "tertiary-fixed": "#e4e2de",
+            "on-background": "#1a1c1c",
+            "on-primary-fixed": "#1c1b1b",
+            "outline": "#747878",
+            "on-primary-fixed-variant": "#474646",
+            "on-secondary-fixed": "#0f0069",
+            "error": "#ba1a1a",
+            "secondary-fixed": "#e2dfff",
+            "on-secondary-fixed-variant": "#3e3a94",
+            "on-error-container": "#93000a",
+            "surface-container-lowest": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "on-primary": "#ffffff",
+            "secondary": "#5653ae",
+            "outline-variant": "#c4c7c7",
+            "on-primary-container": "#858383",
+            "tertiary-fixed-dim": "#c8c6c3",
+            "surface-dim": "#dadada",
+            "on-secondary-container": "#34308a",
+            "error-container": "#ffdad6",
+            "primary-container": "#1c1b1b",
+            "inverse-primary": "#c8c6c5",
+            "tertiary-container": "#1b1c1a",
+            "on-tertiary-fixed": "#1b1c1a",
+            "primary-fixed": "#e5e2e1",
+            "secondary-container": "#a19eff",
+            "inverse-surface": "#2f3131",
+            "on-tertiary-fixed-variant": "#474744",
+            "surface": "#f9f9f9",
+            "secondary-fixed-dim": "#c3c0ff",
+            "indigo-accent": "#2A2580"
+          },
+          "borderRadius": {
+            "DEFAULT": "0px",
+            "lg": "0px",
+            "xl": "0px",
+            "full": "0px"
+          },
+          "spacing": {
+            "space-lg": "2rem",
+            "space-xs": "0.25rem",
+            "space-2xl": "8rem",
+            "gutter": "2rem",
+            "gutter-mobile": "1rem",
+            "margin-mobile": "1.25rem",
+            "space-md": "1rem",
+            "space-sm": "0.5rem",
+            "space-xl": "4rem",
+            "margin": "4rem"
+          },
+          "fontFamily": {
+            "headline-md": ["Bebas Neue", "sans-serif"],
+            "headline-lg-mobile": ["Bebas Neue", "sans-serif"],
+            "title-sm": ["Noto Sans KR", "Noto Sans", "sans-serif"],
+            "body-lg": ["Noto Sans KR", "Noto Sans", "sans-serif"],
+            "body-md": ["Noto Sans KR", "Noto Sans", "sans-serif"],
+            "label-monospaced": ["JetBrains Mono", "monospace"],
+            "display-xl": ["Bebas Neue", "sans-serif"],
+            "label-monospaced-bold": ["JetBrains Mono", "monospace"],
+            "headline-lg": ["Bebas Neue", "sans-serif"],
+            "display-xl-mobile": ["Bebas Neue", "sans-serif"],
+            "body-sm": ["Noto Sans KR", "Noto Sans", "sans-serif"]
+          },
+          "fontSize": {
+            "headline-md": [
+              "32px",
+              {
+                "lineHeight": "36px",
+                "letterSpacing": "0.04em",
+                "fontWeight": "400"
+              }
+            ],
+            "headline-lg-mobile": [
+              "36px",
+              {
+                "lineHeight": "40px",
+                "letterSpacing": "0.03em",
+                "fontWeight": "400"
+              }
+            ],
+            "title-sm": [
+              "18px",
+              {
+                "lineHeight": "26px",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "700"
+              }
+            ],
+            "body-lg": [
+              "17px",
+              {
+                "lineHeight": "30px",
+                "letterSpacing": "-0.015em",
+                "fontWeight": "400"
+              }
+            ],
+            "body-md": [
+              "15px",
+              {
+                "lineHeight": "26px",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "400"
+              }
+            ],
+            "label-monospaced": [
+              "12px",
+              {
+                "lineHeight": "18px",
+                "letterSpacing": "0.04em",
+                "fontWeight": "400"
+              }
+            ],
+            "display-xl": [
+              "96px",
+              {
+                "lineHeight": "96px",
+                "letterSpacing": "0.02em",
+                "fontWeight": "400"
+              }
+            ],
+            "label-monospaced-bold": [
+              "12px",
+              {
+                "lineHeight": "18px",
+                "letterSpacing": "0.06em",
+                "fontWeight": "700"
+              }
+            ],
+            "headline-lg": [
+              "56px",
+              {
+                "lineHeight": "60px",
+                "letterSpacing": "0.03em",
+                "fontWeight": "400"
+              }
+            ],
+            "display-xl-mobile": [
+              "52px",
+              {
+                "lineHeight": "54px",
+                "letterSpacing": "0.02em",
+                "fontWeight": "400"
+              }
+            ],
+            "body-sm": [
+              "13px",
+              {
+                "lineHeight": "22px",
+                "letterSpacing": "0em",
+                "fontWeight": "400"
+              }
+            ]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    * {
+      border-radius: 0 !important;
+      box-shadow: none !important;
+    }
+    ::selection {
+      background-color: #111111;
+      color: #ffffff;
+    }
+    .custom-scroll::-webkit-scrollbar {
+      width: 4px;
+    }
+    .custom-scroll::-webkit-scrollbar-track {
+      background: #f9f9f9;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background: #dadada;
+    }
+  </style>
+</head>
+<body class="bg-surface text-primary antialiased min-h-screen selection:bg-primary selection:text-white flex flex-col font-body-md text-body-md">
+<!-- ========================================================================= -->
+<!-- 1. FIXED LEFT EDGE STRIP (SideNavBar Blueprint)                          -->
+<!-- ========================================================================= -->
+<aside class="fixed top-0 left-0 h-screen w-16 md:w-20 border-r border-outline-variant flex flex-col justify-between items-center py-8 z-40 bg-surface select-none">
+<!-- Top indicator -->
+<div class="flex flex-col items-center gap-2">
+<span class="font-label-monospaced-bold text-label-monospaced-bold text-primary tracking-widest">[LIVE]</span>
+<span class="w-1.5 h-1.5 bg-primary block"></span>
+</div>
+<!-- Center Rotated Logo -->
+<div class="transform -rotate-90 origin-center whitespace-nowrap my-auto py-12">
+<a class="font-headline-md text-headline-md tracking-[0.25em] text-primary hover:text-indigo-accent uppercase" href="#">
+        SIDE BY SIDE
+      </a>
+</div>
+<!-- Bottom Indicator / Volume -->
+<div class="flex flex-col items-center gap-3">
+<span class="font-label-monospaced text-label-monospaced text-on-surface-variant transform -rotate-90 origin-center whitespace-nowrap mb-6">
+        VOL. 2026
+      </span>
+<div class="font-label-monospaced text-[10px] text-outline text-center leading-tight">
+        CUL.<br/>CHURCH
+      </div>
+</div>
+</aside>
+<!-- ========================================================================= -->
+<!-- 2. FIXED TOP NAVBAR (TopNavBar Blueprint with Curatorial Metadata)        -->
+<!-- ========================================================================= -->
+<header class="fixed top-0 left-0 w-full h-10 pl-16 md:pl-20 border-b border-outline-variant flex justify-between items-center z-30 bg-surface px-6 md:px-12"><div class="flex items-center gap-6"><span class="font-label-monospaced text-label-monospaced text-primary tracking-wider uppercase">SANCTUARY &amp; WHITE CUBE ARCHIVE · VOL. 2026</span><span class="hidden md:inline-block font-label-monospaced text-label-monospaced text-on-surface-variant">SEOUL, KOREA · 37.541° N, 127.056° E</span></div><div class="font-label-monospaced text-[10px] text-on-surface-variant tracking-widest hidden sm:block">CURATORIAL RECORD · 2026</div></header>
+<!-- ========================================================================= -->
+<!-- MAIN EDITORIAL CANVAS (Offset by Left Strip 64-80px & Top Nav 64px)       -->
+<!-- ========================================================================= -->
+<nav class="fixed top-14 right-6 md:right-12 z-40 bg-surface/95 p-4 border border-outline-variant hidden md:block select-none"><div class="font-label-monospaced text-[10px] tracking-widest text-on-surface-variant uppercase mb-3 border-b border-outline-variant pb-1">[INDEX OF SECTIONS]</div><ul class="space-y-1.5 font-label-monospaced text-label-monospaced text-primary"><li class="tracking-wider"><a class="text-on-surface-variant hover:text-indigo-accent block" href="#"><span class="text-on-surface-variant">01.</span> EXHIBITIONS</a></li><li class="tracking-wider"><a class="text-on-surface-variant hover:text-indigo-accent block" href="#"><span class="text-on-surface-variant">02.</span> ARTISTS</a></li><li class="tracking-wider"><a class="text-on-surface-variant hover:text-indigo-accent block" href="#"><span class="text-on-surface-variant">03.</span> WEBTOON</a></li><li class="tracking-wider"><a class="text-on-surface-variant hover:text-indigo-accent block" href="#"><span class="text-on-surface-variant">04.</span> WORKS</a></li><li class="tracking-wider"><a class="text-on-surface-variant hover:text-indigo-accent block" href="#"><span class="text-on-surface-variant">05.</span> PROGRAMS</a></li><li class="tracking-wider pt-0.5"><a class="text-indigo-accent font-label-monospaced-bold border-b-2 border-indigo-accent inline-block pb-0.5" href="#"><span>06.</span> ABOUT</a></li></ul></nav><main class="ml-16 md:ml-20 flex-grow bg-surface mt-10">
+<!-- --------------------------------------------------------------------- -->
+<!-- SECTION 1: HEADER / MANIFESTO & IDENTITY                              -->
+<!-- --------------------------------------------------------------------- -->
+<section class="border-b border-outline-variant px-6 md:px-16 pt-16 pb-20">
+<div class="max-w-7xl mx-auto">
+<!-- Archival Classification Meta -->
+<div class="flex flex-wrap items-center justify-between pb-8 border-b border-outline-variant mb-12">
+<div class="font-label-monospaced-bold text-label-monospaced-bold text-primary tracking-widest">
+            [ABOUT / INSTITUTIONAL IDENTITY]
+          </div>
+<div class="font-label-monospaced text-label-monospaced text-on-surface-variant flex gap-6">
+<span>INDEX NO: SBS-ARCH-2026-00</span>
+<span>STATUS: PERMANENT RESIDENCY</span>
+<span>CURATION: CULTURAL SANCTUARY</span>
+</div>
+</div>
+<!-- Main Heading Cluster -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-12">
+<div class="lg:col-span-5">
+<h1 class="font-display-xl text-display-xl text-primary uppercase tracking-tight leading-none mb-4">
+              ABOUT
+            </h1>
+<div class="font-label-monospaced text-label-monospaced text-on-surface-variant">
+              SIDE BY SIDE CULTURAL SANCTUARY &amp; CONTEMPORARY ART ARCHIVE
+            </div>
+</div>
+<div class="lg:col-span-7 pt-2">
+<!-- Large Korean Statement Text -->
+<p class="font-title-sm text-title-sm md:text-[28px] md:leading-[38px] text-primary font-bold tracking-tight mb-8">
+              "서로 다른 예술이 한 벽에 걸리는 곳"
+            </p>
+<div class="font-body-lg text-body-lg text-on-surface leading-relaxed space-y-4 text-justify">
+<p>
+                사이드바이사이드(Side by Side · 문화예술교회)는 정형화된 공간의 위계를 허물고, 동시대 시각예술과 영적 사유가 교차하는 백색 입방체(White Cube)이자 창작자들의 안식처입니다. 우리는 순수 회화, 개념적 사진, 그리고 한국의 대표적 대중 서사 양식인 웹툰(Sequential Art)에 이르기까지 서로 다른 매체와 세계관을 평등한 한 벽 위에 병치합니다.
+              </p>
+<p>
+                예배당의 성스러움과 현대미술 갤러리의 냉엄한 침묵이 만나 형성되는 이 공간은 관람객에게는 깊은 명상과 영감을, 창작자에게는 타협 없는 창작과 환대의 식탁을 제공합니다. 서로 다른 시선이 나란히 걷는 곳, 사이드바이사이드가 추구하는 예술적·공동체적 지향점입니다.
+              </p>
+</div>
+</div>
+</div>
+<!-- Metric Placards / Metadata Ledger Bar -->
+<div class="grid grid-cols-2 md:grid-cols-4 border border-outline-variant bg-surface-bright">
+<div class="p-4 border-r border-outline-variant">
+<span class="block font-label-monospaced text-[11px] text-on-surface-variant mb-1">FOUNDATION</span>
+<span class="font-label-monospaced-bold text-label-monospaced-bold text-primary">OCTOBER 2021</span>
+</div>
+<div class="p-4 md:border-r border-outline-variant">
+<span class="block font-label-monospaced text-[11px] text-on-surface-variant mb-1">LOCATION</span>
+<span class="font-label-monospaced-bold text-label-monospaced-bold text-primary">SEONGSU-DONG, SEOUL</span>
+</div>
+<div class="p-4 border-r border-outline-variant">
+<span class="block font-label-monospaced text-[11px] text-on-surface-variant mb-1">DISCIPLINES</span>
+<span class="font-label-monospaced-bold text-label-monospaced-bold text-primary">PAINTING / WEBTOON / THEORY</span>
+</div>
+<div class="p-4">
+<span class="block font-label-monospaced text-[11px] text-on-surface-variant mb-1">ADMISSION</span>
+<span class="font-label-monospaced-bold text-label-monospaced-bold text-primary">FREE PUBLIC SANCTUARY</span>
+</div>
+</div>
+</div>
+</section>
+<!-- --------------------------------------------------------------------- -->
+<!-- SECTION 2: HERO GALLERY PHOTO (Architectural Capture)                 -->
+<!-- --------------------------------------------------------------------- -->
+<section class="border-b border-outline-variant px-6 md:px-16 py-16 bg-surface-bright">
+<div class="max-w-7xl mx-auto">
+<!-- Framed Architectural Capture with strict hairline border -->
+<div class="border border-outline-variant bg-surface-container-lowest overflow-hidden">
+<img alt="Interior view of Side by Side main gallery white cube space with skylight, minimal concrete floor, and exhibited monochrome canvases" class="w-full h-auto max-h-[720px] object-cover grayscale contrast-[1.05]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtocMiPwjfmRZOPbU6LHQrcn5HbTQO7kSPiNVZVVM-xRBM517yXrIJq8caK23dZcdaN2aGLXQgcd-b3SSbD01aFfcapl2B4sJ6xT8IiUpRWRF5SnzFHeXdFgpTCERBP7NkyOC77Pw2ZMejPS6rkEirFCh6u88LeepNC_rX7G1cRcEaNLIoBgORsZu2JZ2_jEG9VPTFJWxoQzmjZPEyEVspWsxoipQv58iGCCKvGGb-19TUwSV-ky-Cy9OtcDS0IhF-x-xqIPtIKoE"/>
+</div>
+<!-- Museum Placard Caption underneath -->
+<div class="mt-4 flex flex-col md:flex-row md:items-center justify-between border-b border-outline-variant pb-3 gap-2">
+<div class="font-label-monospaced text-label-monospaced text-primary tracking-wider">
+            ARCHIVE VIEW · SIDE BY SIDE MAIN GALLERY HALL 01 / SEONGSU-DONG, SEOUL / WHITE CUBE EXHIBITION RESIDENCY
+          </div>
+<div class="font-label-monospaced text-[11px] text-on-surface-variant">
+            FIG. ARCH-01 · NATURAL SKYLIGHT ATRIUM · 450 SQM
+          </div>
+</div>
+</div>
+</section>
+<!-- --------------------------------------------------------------------- -->
+<!-- SECTION 3: 01 / 공동체 · 모임 (COMMUNITY & GATHERINGS)                  -->
+<!-- --------------------------------------------------------------------- -->
+<section id="gatherings" class="border-b border-outline-variant px-6 md:px-16 py-20">
+<div class="max-w-7xl mx-auto">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-baseline justify-between border-b border-outline-variant pb-4 mb-10">
+<div class="flex items-baseline gap-4">
+<span class="font-headline-md text-headline-md text-primary">01 /</span>
+<h2 class="font-title-sm text-title-sm md:text-2xl text-primary font-bold">
+              공동체 · 모임 — GATHERINGS
+            </h2>
+</div>
+<span class="font-label-monospaced text-label-monospaced text-on-surface-variant mt-2 md:mt-0">
+            LITURGY, CRITIQUE &amp; ARTIST DIALOGUE CALENDAR
+          </span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left Editorial Statement -->
+<div class="lg:col-span-4">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed mb-6">
+              문화예술교회 사이드바이사이드는 개별 창작의 고립감을 넘어 영적 환대와 연대의 가치를 실현합니다. 매주 일요일의 소박한 예배부터 주중 창작자들의 깊이 있는 비평 테이블까지, 우리는 함께 질문하고 함께 머무는 테이블 공동체입니다.
+            </p>
+<div class="p-6 border border-outline-variant bg-surface">
+<span class="font-label-monospaced-bold text-label-monospaced-bold text-primary block mb-2">[COMMUNITY PROTOCOL]</span>
+<p class="font-label-monospaced text-[11px] text-on-surface-variant leading-relaxed">
+                종교적 배경이나 창작 매체에 관계없이 예술과 생명의 물음에 공감하는 모든 예술인과 시민에게 열려 있습니다. 사전 예약 없이 정해진 시간에 자유롭게 참석하실 수 있습니다.
+              </p>
+</div>
+</div>
+<!-- Right Minimalist Ledger Table -->
+<div class="lg:col-span-8">
+<div class="border-t border-primary">
+<!-- Row 1 -->
+<div class="py-6 border-b border-outline-variant grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline">
+<div class="md:col-span-1 font-label-monospaced text-on-surface-variant">[01]</div>
+<div class="md:col-span-5">
+<h3 class="font-title-sm text-title-sm text-primary font-bold">주일 모임</h3>
+<span class="font-label-monospaced text-label-monospaced text-on-surface-variant">Sunday Liturgy &amp; Fellowship</span>
+</div>
+<div class="md:col-span-4 font-label-monospaced-bold text-label-monospaced-bold text-primary">
+                  매주 일요일 오전 11:00<br/>
+<span class="font-label-monospaced text-on-surface-variant font-normal">Every Sunday 11:00 AM</span>
+</div>
+<div class="md:col-span-2 text-right">
+<span class="font-label-monospaced text-[11px] text-on-surface-variant border border-outline-variant px-2 py-1 inline-block">MAIN HALL</span>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="py-6 border-b border-outline-variant grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline">
+<div class="md:col-span-1 font-label-monospaced text-on-surface-variant">[02]</div>
+<div class="md:col-span-5">
+<h3 class="font-title-sm text-title-sm text-primary font-bold">수요 아트 클래스</h3>
+<span class="font-label-monospaced text-label-monospaced text-on-surface-variant">Wednesday Art Class &amp; Critique</span>
+</div>
+<div class="md:col-span-4 font-label-monospaced-bold text-label-monospaced-bold text-primary">
+                  매주 수요일 오후 07:00<br/>
+<span class="font-label-monospaced text-on-surface-variant font-normal">Every Wednesday 7:00 PM</span>
+</div>
+<div class="md:col-span-2 text-right">
+<span class="font-label-monospaced text-[11px] text-on-surface-variant border border-outline-variant px-2 py-1 inline-block">ATELIER 02</span>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="py-6 border-b border-outline-variant grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline">
+<div class="md:col-span-1 font-label-monospaced text-on-surface-variant">[03]</div>
+<div class="md:col-span-5">
+<h3 class="font-title-sm text-title-sm text-primary font-bold">금요 아티스트 테이블</h3>
+<span class="font-label-monospaced text-label-monospaced text-on-surface-variant">Friday Artists Table &amp; Dialogue</span>
+</div>
+<div class="md:col-span-4 font-label-monospaced-bold text-label-monospaced-bold text-primary">
+                  격주 금요일 오후 07:30<br/>
+<span class="font-label-monospaced text-on-surface-variant font-normal">Bi-weekly Friday 7:30 PM</span>
+</div>
+<div class="md:col-span-2 text-right">
+<span class="font-label-monospaced text-[11px] text-on-surface-variant border border-outline-variant px-2 py-1 inline-block">SALON LOUNGE</span>
+</div>
+</div>
+<!-- Row 4 -->
+<div class="py-6 border-b border-outline-variant grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline">
+<div class="md:col-span-1 font-label-monospaced text-on-surface-variant">[04]</div>
+<div class="md:col-span-5">
+<h3 class="font-title-sm text-title-sm text-primary font-bold">창작자 레지던시 오픈 스튜디오</h3>
+<span class="font-label-monospaced text-label-monospaced text-on-surface-variant">Creator Residency Open Studio</span>
+</div>
+<div class="md:col-span-4 font-label-monospaced-bold text-label-monospaced-bold text-primary">
+                  매월 마지막 주 토요일<br/>
+<span class="font-label-monospaced text-on-surface-variant font-normal">Last Saturday of Month</span>
+</div>
+<div class="md:col-span-2 text-right">
+<span class="font-label-monospaced text-[11px] text-on-surface-variant border border-outline-variant px-2 py-1 inline-block">ALL FLOORS</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- --------------------------------------------------------------------- -->
+<!-- SECTION 4: 02 / PROGRAMS (PROGRAMS & RESIDENCY)                       -->
+<!-- --------------------------------------------------------------------- -->
+<section id="programs" class="border-b border-outline-variant px-6 md:px-16 py-20 bg-surface">
+<div class="max-w-7xl mx-auto">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-baseline justify-between border-b border-outline-variant pb-4 mb-12">
+<div class="flex items-baseline gap-4">
+<span class="font-headline-md text-headline-md text-primary">02 /</span>
+<h2 class="font-title-sm text-title-sm md:text-2xl text-primary font-bold">
+              프로그램 — PROGRAMS
+            </h2>
+</div>
+<span class="font-label-monospaced text-label-monospaced text-on-surface-variant mt-2 md:mt-0">
+            CONTEMPORARY PRACTICES &amp; SPATIAL RESIDENCIES
+          </span>
+</div>
+<!-- 3 Columns with Hairline Vertical Borders -->
+<div class="grid grid-cols-1 md:grid-cols-3 border border-outline-variant divide-y md:divide-y-0 md:divide-x divide-outline-variant bg-surface-bright">
+<!-- Column 1: 공연 · 강좌 -->
+<div class="p-8 md:p-10 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="font-label-monospaced-bold text-label-monospaced-bold text-primary tracking-widest">PROG. 01</span>
+<span class="font-label-monospaced text-[11px] text-on-surface-variant">[DISCOURSE]</span>
+</div>
+<h3 class="font-title-sm text-title-sm md:text-xl text-primary font-bold mb-3">
+                공연 · 강좌
+              </h3>
+<p class="font-label-monospaced text-label-monospaced text-on-surface-variant mb-6">
+                Performances &amp; Lectures
+              </p>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed mb-8">
+                동시대 예술철학 세미나, 사운드 인스톨레이션 연주회, 실험적 시 낭독회 등 전시와 연계된 다학제적 학술 및 공연 프로젝트를 정기적으로 주최합니다. 텍스트와 소리의 울림을 백색 갤러리 안에 채웁니다.
+              </p>
+</div>
+<div>
+<a class="inline-block border-b-2 border-indigo-accent text-indigo-accent font-label-monospaced-bold text-label-monospaced tracking-widest pb-1 hover:text-primary transition-none" href="#">
+                [강좌 일정 및 신청 →]
+              </a>
+</div>
+</div>
+<!-- Column 2: 아카데미 -->
+<div class="p-8 md:p-10 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="font-label-monospaced-bold text-label-monospaced-bold text-primary tracking-widest">PROG. 02</span>
+<span class="font-label-monospaced text-[11px] text-on-surface-variant">[PEDAGOGY]</span>
+</div>
+<h3 class="font-title-sm text-title-sm md:text-xl text-primary font-bold mb-3">
+                아카데미
+              </h3>
+<p class="font-label-monospaced text-label-monospaced text-on-surface-variant mb-6">
+                Academy &amp; Atelier
+              </p>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed mb-8">
+                서사 예술(웹툰) 작법 마스터클래스, 고전 유화 기법 연구, 비평적 시각문화 스터디 그룹을 운영합니다. 전문 작가와 입문자가 동일한 작업대에서 실험하고 교류하는 열린 배움터입니다.
+              </p>
+</div>
+<div>
+<a class="inline-block border-b-2 border-indigo-accent text-indigo-accent font-label-monospaced-bold text-label-monospaced tracking-widest pb-1 hover:text-primary transition-none" href="#">
+                [아카데미 커리큘럼 →]
+              </a>
+</div>
+</div>
+<!-- Column 3: 공간 대관 -->
+<div class="p-8 md:p-10 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="font-label-monospaced-bold text-label-monospaced-bold text-primary tracking-widest">PROG. 03</span>
+<span class="font-label-monospaced text-[11px] text-on-surface-variant">[FACILITY]</span>
+</div>
+<h3 class="font-title-sm text-title-sm md:text-xl text-primary font-bold mb-3">
+                공간 대관
+              </h3>
+<p class="font-label-monospaced text-label-monospaced text-on-surface-variant mb-6">
+                Space Rental &amp; Gallery Hire
+              </p>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed mb-8">
+                높은 천고와 천창 채광을 갖춘 메인 생추어리 홀, 가변형 화이트큐브 프로젝트 룸 대관을 지원합니다. 영리 목적의 상업 행사를 지양하고, 실험적 창작과 예술적 담론 형성을 지향하는 프로젝트를 우선 심사합니다.
+              </p>
+</div>
+<div>
+<a class="inline-block border-b-2 border-indigo-accent text-indigo-accent font-label-monospaced-bold text-label-monospaced tracking-widest pb-1 hover:text-primary transition-none" href="#">
+                [대관 규정 및 문의 →]
+              </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- --------------------------------------------------------------------- -->
+<!-- SECTION 5: 03 / VISIT (SPACE & ARCHIVE INQUIRIES)                     -->
+<!-- --------------------------------------------------------------------- -->
+<section id="visit" class="border-b border-outline-variant px-6 md:px-16 py-20 bg-surface">
+<div class="max-w-7xl mx-auto">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-baseline justify-between border-b border-outline-variant pb-4 mb-12">
+<div class="flex items-baseline gap-4">
+<span class="font-headline-md text-headline-md text-primary">03 /</span>
+<h2 class="font-title-sm text-title-sm md:text-2xl text-primary font-bold">
+              방문 안내 — VISIT &amp; LOCATION
+            </h2>
+</div>
+<span class="font-label-monospaced text-label-monospaced text-on-surface-variant mt-2 md:mt-0">
+            GEOGRAPHIC ACCESS &amp; VISITOR PROTOCOLS
+          </span>
+</div>
+<!-- Two-column Layout: Visit Specs (Left) & District Map Graphic (Right) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left Column: Specs and Directions -->
+<div class="lg:col-span-5 space-y-8">
+<div class="border-t border-primary pt-6">
+<span class="font-label-monospaced text-label-monospaced text-on-surface-variant block mb-2">[LOCATION PROTOCOL]</span>
+<h3 class="font-title-sm text-title-sm text-primary font-bold mb-1">
+                서울특별시 성동구 성수이로 아틀리에길 24
+              </h3>
+<p class="font-label-monospaced text-label-monospaced text-on-surface-variant">
+                24 Atelier-gil, Seongsu-dong, Seongdong-gu, Seoul, Republic of Korea
+              </p>
+</div>
+<div class="border-t border-outline-variant pt-6">
+<span class="font-label-monospaced text-label-monospaced text-on-surface-variant block mb-2">[HOURS OF ADMISSION]</span>
+<p class="font-label-monospaced-bold text-label-monospaced-bold text-primary mb-1">
+                WEDNESDAY – SUNDAY : 11:00 – 19:00
+              </p>
+<p class="font-label-monospaced text-label-monospaced text-error">
+                CLOSED ON MONDAYS &amp; TUESDAYS
+              </p>
+</div>
+<div class="border-t border-outline-variant pt-6">
+<span class="font-label-monospaced text-label-monospaced text-on-surface-variant block mb-2">[TARIFF &amp; ADMISSION]</span>
+<p class="font-body-md text-body-md text-primary font-bold mb-1">
+                무료 관람 (Free Admission to the public)
+              </p>
+<p class="font-label-monospaced text-label-monospaced text-on-surface-variant">
+                문화예술교회의 모든 상설 및 기획 전시는 시민들에게 무료로 공개됩니다.
+              </p>
+</div>
+<div class="border-t border-outline-variant pt-6">
+<span class="font-label-monospaced text-label-monospaced text-on-surface-variant block mb-2">[SUBWAY &amp; TRANSIT]</span>
+<p class="font-body-md text-body-md text-primary mb-1">
+                지하철 2호선 <span class="font-bold">성수역 3번 출구</span> 도보 6분
+              </p>
+<p class="font-label-monospaced text-label-monospaced text-on-surface-variant">
+                6 min walk from Seongsu Station Exit 3 · Han River Direction
+              </p>
+</div>
+<div class="border-t border-outline-variant pt-6">
+<span class="font-label-monospaced text-label-monospaced text-on-surface-variant block mb-2">[COMMUNICATIONS]</span>
+<div class="font-label-monospaced text-label-monospaced text-primary space-y-1">
+<div>EMAIL: <a class="border-b border-primary hover:border-indigo-accent hover:text-indigo-accent" href="mailto:contact@sidebyside.art">contact@sidebyside.art</a></div>
+<div>TEL: +82 (0)2-543-2026</div>
+<div>INSTAGRAM: @sidebyside_art</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Map Graphic Frame -->
+<div class="lg:col-span-7">
+<div class="border border-outline-variant bg-surface-container-lowest p-2">
+<div class="border border-outline-variant overflow-hidden">
+<img alt="Architectural grid map of Seongsu-dong Art District showing side by side art space location, streets, subway line, and Han River" class="w-full h-auto object-cover grayscale contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCt-dmJNiTuOuLC4V0EaP3MEsr8vNjBkXhL6SSuGdF-xszCXWOdbSPp0nQUnQ_X5w7_7Op8rF6cMKTHhGYNihp2rqXEnofrTAjdxvgd2c8-BOcjw_ygNH0duG1XrKgsPIkWzV7QOeyturUj0pBhgzB_XA8NpjYML3GVSWvjFlD0HMRPwmVArrYOPIhKupA2YxPYQnFW-WGinE2hg6uxJi3R699j0V-azU_4QfY2BTop9k1NQ2hHxV7eWQSc5CTb0apBCJW5bC4GtE0"/>
+</div>
+</div>
+<div class="mt-3 flex justify-between items-center px-1">
+<span class="font-label-monospaced text-label-monospaced text-primary tracking-widest">
+                SEONGSU ART DISTRICT SITE PLAN · MAP PROTOCOL MM-2026
+              </span>
+<span class="font-label-monospaced text-[11px] text-on-surface-variant">
+                SCALE 1:5000 · ARCHIVE GRID
+              </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- ========================================================================= -->
+<!-- FOOTER (Shared Components Blueprint: Footer)                             -->
+<!-- ========================================================================= -->
+<footer class="ml-16 md:ml-20 border-t border-outline-variant bg-surface py-16 px-6 md:px-16 text-primary z-30">
+<div class="max-w-7xl mx-auto">
+<!-- 4 Columns Institutional Ledger -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 pb-16 border-b border-outline-variant">
+<!-- Col 1: Identity & Vision -->
+<div>
+<span class="font-label-monospaced-bold text-label-monospaced-bold text-primary block mb-4">
+            01 / IDENTITY &amp; VISION
+          </span>
+<h4 class="font-headline-md text-headline-md text-primary tracking-wider mb-3">
+            SIDE BY SIDE
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            문화예술교회 사이드바이사이드는 현대미술의 사유와 신앙 공동체의 환대가 공존하는 서울 성수동의 문화예술 안식처입니다.
+          </p>
+</div>
+<!-- Col 2: Directory -->
+<div>
+<span class="font-label-monospaced-bold text-label-monospaced-bold text-primary block mb-4">
+            02 / DIRECTORY
+          </span>
+<ul class="space-y-3 font-label-monospaced text-label-monospaced text-on-surface-variant">
+<li>
+<a class="hover:text-indigo-accent transition-none" href="#">[공동체 소개 및 MISSION STATEMENT]</a>
+</li>
+<li>
+<a class="hover:text-indigo-accent transition-none" href="#">[주일 예배 안내]</a>
+</li>
+<li>
+<a class="hover:text-indigo-accent transition-none" href="#">[레지던시 공모]</a>
+</li>
+<li>
+<a class="hover:text-indigo-accent transition-none" href="#">[COLLECTION POLICY]</a>
+</li>
+</ul>
+</div>
+<!-- Col 3: Navigation -->
+<div>
+<span class="font-label-monospaced-bold text-label-monospaced-bold text-primary block mb-4">
+            03 / NAVIGATION
+          </span>
+<ul class="space-y-3 font-label-monospaced text-label-monospaced text-on-surface-variant">
+<li><a class="hover:text-indigo-accent transition-none" href="#">EXHIBITIONS</a></li>
+<li><a class="hover:text-indigo-accent transition-none" href="#">ARTISTS</a></li>
+<li><a class="hover:text-indigo-accent transition-none" href="#">WEBTOON</a></li>
+<li><a class="hover:text-indigo-accent transition-none" href="#">PROGRAMS</a></li>
+<li><a class="text-indigo-accent font-bold underline transition-none" href="#">ABOUT (ACTIVE)</a></li>
+<li><a class="hover:text-indigo-accent transition-none" href="#">VISIT</a></li>
+</ul>
+</div>
+<!-- Col 4: Visit & Contact -->
+<div>
+<span class="font-label-monospaced-bold text-label-monospaced-bold text-primary block mb-4">
+            04 / VISIT &amp; CONTACT
+          </span>
+<div class="font-label-monospaced text-label-monospaced text-on-surface-variant space-y-2 leading-relaxed">
+<p>서울특별시 성동구 성수이로 아틀리에길 24</p>
+<p>EMAIL: contact@sidebyside.art</p>
+<p>TEL: +82 (0)2-543-2026</p>
+<p>INSTAGRAM: @sidebyside_art</p>
+</div>
+</div>
+</div>
+<!-- Copyright Bar -->
+<div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="font-label-monospaced text-[11px] text-on-surface-variant text-center md:text-left">
+          © 2026 SIDE BY SIDE ART SPACE &amp; CULTURAL COMMUNITY (문화예술교회). ALL RIGHTS RESERVED.
+        </div>
+<div class="flex items-center gap-6 font-label-monospaced text-[11px] text-on-surface-variant">
+<span>CURATORIAL PROTOCOL: WHITE CUBE / SEQUENTIAL 1.0</span>
+<a class="text-primary hover:text-indigo-accent font-label-monospaced-bold" href="#">[TOP ↑]</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

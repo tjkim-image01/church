@@ -1,0 +1,14 @@
+{
+  "name": "side-by-side",
+  "private": true,
+  "description": "문화예술교회 Side by Side — 정적 사이트 (빌드 도구만 사용, 배포물은 순수 HTML/CSS)",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "serve": "python3 -m http.server 8765 --bind 127.0.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/container-queries": "0.1.1",
+    "@tailwindcss/forms": "0.5.9",
+    "tailwindcss": "3.4.17"
+  }
+}

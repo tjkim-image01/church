@@ -1,0 +1,33 @@
+/* 모바일 공통 레이어 — Stitch 시안은 데스크톱 기준이라, 767px 이하에서
+   왼쪽 세로 로고 레일과 오른쪽 고정 메뉴를 숨기고 상단 바 + 전체 화면 메뉴로 바꾼다. */
+.sbs-mbar, .sbs-menu { display: none; }
+
+@media (max-width: 767px) {
+  .sbs-rail, .sbs-dnav, .sbs-fhead { display: none !important; }
+  .sbs-main { margin-left: 0 !important; width: 100% !important; }
+  body { padding-top: 52px; }
+
+  .sbs-mbar {
+    display: flex; align-items: center; justify-content: space-between;
+    position: fixed; inset: 0 0 auto 0; height: 52px; padding: 0 20px; z-index: 90;
+    background: #fff; color: #111; border-bottom: 1px solid #e2e0da;
+  }
+  [data-sbs-theme="dark"] .sbs-mbar { background: #0e0e0e; color: #fff; border-color: #262626; }
+  .sbs-mbar a { font-family: "Bebas Neue", sans-serif; font-size: 24px; letter-spacing: .04em; color: inherit; text-decoration: none; }
+  .sbs-mbar button {
+    font-family: "JetBrains Mono", monospace; font-size: 12px; letter-spacing: .12em;
+    background: none; border: 0; border-bottom: 1px solid currentColor; color: inherit; padding: 2px 0; cursor: pointer;
+  }
+
+  .sbs-menu.is-open {
+    display: flex; flex-direction: column; justify-content: center; gap: 6px;
+    position: fixed; inset: 52px 0 0 0; z-index: 89; padding: 0 20px 40px;
+    background: #fff; color: #111;
+  }
+  [data-sbs-theme="dark"] .sbs-menu.is-open { background: #0e0e0e; color: #fff; }
+  .sbs-menu a { font-family: "Bebas Neue", sans-serif; font-size: 44px; line-height: 1.1; color: inherit; text-decoration: none; }
+  .sbs-menu a[aria-current="page"] { color: #2a2580; text-decoration: underline; text-underline-offset: 6px; }
+  [data-sbs-theme="dark"] .sbs-menu a[aria-current="page"] { color: #a19eff; }
+  .sbs-menu small { margin-top: 24px; font-family: "JetBrains Mono", monospace; font-size: 12px; letter-spacing: .08em; opacity: .6; }
+  body.sbs-menu-open { overflow: hidden; }
+}

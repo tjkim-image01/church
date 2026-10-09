@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Side by Side — 문화예술교회 Contemporary Art Space</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=JetBrains+Mono:wght@400;700&amp;family=Noto+Sans+KR:wght@300;400;500;700&amp;family=Noto+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<link href="assets/css/index.css" rel="stylesheet"/>
+<style>
+    /* Absolute gallery precision styles */
+    * {
+      border-radius: 0 !important;
+      box-shadow: none !important;
+    }
+    .vertical-brand-text {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      transform: rotate(180deg);
+    }
+    .text-indigo-accent {
+      color: #2A2580;
+    }
+    .border-indigo-accent {
+      border-color: #2A2580;
+    }
+    .hover-indigo-accent:hover {
+      color: #2A2580;
+      border-color: #2A2580;
+    }
+  </style>
+<link href="assets/css/mobile.css" rel="stylesheet"/>
+<script defer src="assets/js/menu.js"></script>
+</head>
+<body class="bg-background text-primary antialiased selection:bg-primary selection:text-surface">
+<div class="sbs-mbar"><a href="index.html">Side by Side</a><button type="button" aria-expanded="false" aria-controls="sbs-menu">MENU</button></div>
+<nav class="sbs-menu" id="sbs-menu" aria-label="Mobile"><a href="index.html" aria-current="page">Home</a><a href="exhibition.html">Exhibitions</a><a href="artists.html">Artists</a><a href="webtoon.html">Webtoon</a><a href="work.html">Works</a><a href="about.html#programs">Programs</a><a href="about.html">About</a><small>문화예술교회 · Art Space</small></nav>
+<!-- 1. FIXED LEFT EDGE: Vertically Orientated Institution Brand Mark -->
+<aside class="sbs-rail fixed top-0 left-0 h-screen w-20 md:w-24 border-r border-outline-variant bg-background z-50 flex flex-col justify-between items-center py-8 select-none">
+<div class="flex flex-col items-center gap-4">
+<span class="font-label-monospaced text-label-monospaced tracking-widest text-primary font-bold">№ 01</span>
+<div class="w-px h-12 bg-primary"></div>
+</div>
+<!-- Monolithic Vertical Typography -->
+<div class="flex flex-col items-center justify-center my-auto">
+<h1 class="vertical-brand-text font-display-xl text-headline-lg tracking-[0.25em] text-primary whitespace-nowrap">
+        SIDE BY SIDE
+      </h1>
+<span class="font-label-monospaced text-label-monospaced text-on-surface-variant tracking-wider mt-6 [writing-mode:vertical-rl] rotate-180 text-[10px]">
+        문화예술교회 · ART SPACE
+      </span>
+</div>
+<!-- Live Status Indicator -->
+<div class="flex flex-col items-center gap-2">
+<div class="w-2 h-2 bg-primary"></div>
+<span class="font-label-monospaced text-[10px] tracking-widest text-primary uppercase">[LIVE]</span>
+</div>
+</aside>
+<!-- 2. FIXED TOP-RIGHT NAVIGATION: Minimalist Vertical / Stacked Text Structure -->
+<header class="sbs-fhead fixed top-8 right-8 md:right-16 z-50 pointer-events-auto">
+<nav class="sbs-dnav flex flex-col items-end gap-1.5 bg-background/90 backdrop-blur-none p-2 border border-outline-variant md:border-transparent">
+<div class="sbs-dnav font-label-monospaced text-[11px] text-on-surface-variant tracking-widest uppercase mb-1">
+        [INDEX OF SECTIONS]
+      </div>
+<a class="font-label-monospaced-bold text-label-monospaced text-secondary border-b border-indigo-accent tracking-widest" href="index.html">
+        00. OVERVIEW
+      </a>
+<a class="font-label-monospaced text-label-monospaced text-on-surface-variant hover:text-secondary hover:border-b hover:border-indigo-accent tracking-widest transition-none" href="exhibition.html">
+        01. EXHIBITIONS
+      </a>
+<a class="font-label-monospaced text-label-monospaced text-on-surface-variant hover:text-secondary hover:border-b hover:border-indigo-accent tracking-widest transition-none" href="artists.html">
+        02. ARTISTS
+      </a>
+<a class="font-label-monospaced text-label-monospaced text-on-surface-variant hover:text-secondary hover:border-b hover:border-indigo-accent tracking-widest transition-none" href="webtoon.html">
+        03. WEBTOON
+      </a>
+<a class="font-label-monospaced text-label-monospaced text-on-surface-variant hover:text-secondary hover:border-b hover:border-indigo-accent tracking-widest transition-none" href="work.html">
+        04. WORKS
+      </a>
+<a class="font-label-monospaced text-label-monospaced text-on-surface-variant hover:text-secondary hover:border-b hover:border-indigo-accent tracking-widest transition-none" href="about.html#programs">
+        05. PROGRAMS
+      </a>
+<a class="font-label-monospaced text-label-monospaced text-on-surface-variant hover:text-secondary hover:border-b hover:border-indigo-accent tracking-widest transition-none" href="about.html">
+        06. ABOUT
+      </a>
+</nav>
+</header>
+<!-- MAIN SCROLLABLE CONTENT CANVAS (Offset by 80px/96px for Left Margin Rail) -->
+<main class="sbs-main ml-20 md:ml-24 w-[calc(100%-5rem)] md:w-[calc(100%-6rem)] overflow-x-hidden">
+<!-- 3. HERO SECTION -->
+<section class="relative pt-12 md:pt-16 px-6 md:px-16 lg:px-24 mb-space-2xl" id="hero">
+<!-- Institutional Supertitle -->
+<div class="flex justify-between items-baseline border-b border-primary pb-3 mb-6">
+<span class="font-label-monospaced-bold text-label-monospaced-bold uppercase tracking-widest">
+          SANCTUARY &amp; WHITE CUBE ARCHIVE · VOL. 2026
+        </span>
+<span class="font-label-monospaced text-label-monospaced text-on-surface-variant tracking-wider">
+          SEOUL, KOREA — 37.5446° N, 127.0557° E
+        </span>
+</div>
+<!-- Hero Visual Art Frame -->
+<div class="relative w-full border border-primary bg-surface-container-high overflow-hidden">
+<div class="aspect-[21/9] w-full relative">
+<img class="w-full h-full object-cover grayscale-0 filter" data-alt="A massive, high-contrast contemporary fine art composition featuring bold expressive oil brushstrokes intertwined with crisp comic panel outlines and vivid ink linework. A pristine white gallery wall backdrop illuminates vibrant ultramarine blues, cadmium yellows, and deep archival black ink splashes. The lighting is pure institutional white daylight, emphasizing raw surface texture without digital filters or warm ambient glow." src="assets/img/1cd19f4772352fbf.jpg"/>
+</div>
+<!-- Overlapping Crisp White Text Box (Bottom-Left Institutional Placard) -->
+<div class="md:absolute md:bottom-0 md:left-0 bg-background border-t md:border-t-0 md:border-r md:border-t border-primary p-6 md:p-12 max-w-2xl z-20">
+<span class="font-label-monospaced text-label-monospaced text-secondary uppercase tracking-widest block mb-2">
+            [INSTITUTIONAL MANIFESTO]
+          </span>
+<h2 class="font-display-xl text-headline-lg md:text-display-xl leading-none tracking-tight text-primary uppercase mb-3">
+            SIDE BY SIDE
+          </h2>
+<p class="font-body-lg text-body-lg text-primary font-medium tracking-tight mb-4">
+            서로 다른 예술이 한 벽에 걸리는 곳
+          </p>
+<div class="w-12 h-px bg-primary mb-4"></div>
+<p class="font-label-monospaced text-label-monospaced text-on-surface-variant leading-relaxed">
+            웹툰 · 회화 · 일러스트 · 사진 · 설치 — 100명의 창작자가 함께 구축하는 순수 현대 미술과 연속 예술(Sequential Art)의 물리적·디지털 공존 구역.
+          </p>
+<div class="mt-6 flex items-center gap-6">
+<a class="font-label-monospaced-bold text-label-monospaced text-primary hover:text-secondary border-b border-primary hover:border-indigo-accent tracking-widest pb-0.5 inline-block" href="work.html">
+              [ENTER THE WALL] →
+            </a>
+<span class="font-label-monospaced text-label-monospaced text-on-surface-variant">
+              ROOM 01/04
+            </span>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. SECTION: 지금 걸린 작품 / NOW ON THE WALL -->
+<section class="px-6 md:px-16 lg:px-24 mb-space-2xl" id="wall">
+<!-- Section Header -->
+<div class="border-t border-b border-primary py-4 mb-16 flex flex-col md:flex-row justify-between md:items-baseline gap-2">
+<h2 class="font-headline-md text-headline-md text-primary tracking-wider uppercase">
+          01 / 지금 걸린 작품 — NOW ON THE WALL
+        </h2>
+<div class="flex items-center gap-4">
+<span class="font-label-monospaced text-label-monospaced text-on-surface-variant uppercase">
+            GALLERY ROTATION NO. 44
+          </span>
+<span class="font-label-monospaced-bold text-label-monospaced text-primary">
+            [32 WORKS ON VIEW]
+          </span>
+</div>
+</div>
+<!-- Asymmetric Staggered 3-Column Gallery Layout -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16 items-start">
+<!-- Column 1: Fine Art Painting -->
+<article class="flex flex-col">
+<div class="border border-primary p-2 bg-background mb-4">
+<div class="aspect-[3/4] w-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="An austere, monumental oil painting depicting abstract architectural sanctuaries with harsh vertical light beams penetrating deep slate-grey voids. Monochromatic greyscale transitions accented with raw unprimed canvas linen textures. Harsh white gallery spot lighting, no reflections, evoking deep contemplative silence." src="assets/img/56517a5b975cb2b0.jpg"/>
+</div>
+</div>
+<!-- Wall Label Placard -->
+<div class="pl-1 border-l-2 border-primary space-y-1">
+<div class="font-label-monospaced-bold text-label-monospaced-bold uppercase tracking-wider text-primary">
+              김지원 / KIM JI-WON
+            </div>
+<div class="font-label-monospaced text-label-monospaced italic text-primary">
+              무제 (빛과 침묵) [Untitled: Light and Silence], 2025
+            </div>
+<div class="font-label-monospaced text-label-monospaced text-on-surface-variant">
+              캔버스에 유채, 130×162cm
+            </div>
+<div class="font-label-monospaced text-[11px] text-secondary tracking-widest pt-1">
+              ARCHIVE REF. #FA-2025-089 / ON DISPLAY
+            </div>
+</div>
+</article>
+<!-- Column 2: Webtoon Panel Poster (Offset Top) -->
+<article class="flex flex-col md:mt-16">
+<div class="border border-primary p-2 bg-background mb-4">
+<div class="aspect-[2/3] w-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A striking vertical graphic webtoon cover illustration featuring a lone figure bathed in stark cyan fluorescent light outside a nighttime city convenience store. Sharp Japanese-Korean sequential art ink linework, hyper-detailed halftone screen patterns, and intense atmospheric cinematic contrast in near-black and cobalt hues." src="assets/img/309158dc466aa001.jpg"/>
+</div>
+</div>
+<!-- Wall Label Placard -->
+<div class="pl-1 border-l-2 border-primary space-y-1">
+<div class="font-label-monospaced-bold text-label-monospaced-bold uppercase tracking-wider text-primary">
+              이산하 / LEE SAN-HA
+            </div>
+<div class="font-label-monospaced text-label-monospaced italic text-primary">
+              심야편의점 Ep.12 [Midnight Bodega], 2026
+            </div>
+<div class="font-label-monospaced text-label-monospaced text-on-surface-variant">
+              디지털 잉크 및 스크린톤, 가변 크기 연속 예술
+            </div>
+<div class="font-label-monospaced text-[11px] text-secondary tracking-widest pt-1">
+              ARCHIVE REF. #WT-2026-012 / SERIAL ONGOING
+            </div>
+</div>
+</article>
+<!-- Column 3: Mixed Media & Experimental Installation Frame -->
+<article class="flex flex-col md:mt-8">
+<div class="border border-primary p-2 bg-background mb-4">
+<div class="aspect-[4/5] w-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A contemporary mixed-media conceptual artwork incorporating physical scripture typography printed on transparent acrylic sheets layered over rough impasto gold leaf and charcoal textures. Gallery archival presentation with severe straight framing, pure stark white background, institutional clean lighting." src="assets/img/f6748dbb19c5fd68.jpg"/>
+</div>
+</div>
+<!-- Wall Label Placard -->
+<div class="pl-1 border-l-2 border-primary space-y-1">
+<div class="font-label-monospaced-bold text-label-monospaced-bold uppercase tracking-wider text-primary">
+              박민규 / MIN KYU PARK
+            </div>
+<div class="font-label-monospaced text-label-monospaced italic text-primary">
+              성소의 잔상 (Afterimage of the Altar), 2025
+            </div>
+<div class="font-label-monospaced text-label-monospaced text-on-surface-variant">
+              목판 위 아크릴, 금박, 먹, 90×110cm
+            </div>
+<div class="font-label-monospaced text-[11px] text-secondary tracking-widest pt-1">
+              ARCHIVE REF. #MM-2025-104 / PERMANENT COLLECTION
+            </div>
+</div>
+</article>
+</div>
+<!-- Action Row -->
+<div class="mt-16 pt-8 border-t border-outline-variant flex justify-between items-center">
+<span class="font-label-monospaced text-label-monospaced text-on-surface-variant">
+          PAGINATION: 01 / 08 (TOTAL 100 CREATORS REGISTERED)
+        </span>
+<a class="font-label-monospaced-bold text-label-monospaced text-primary hover:text-secondary border-b border-primary hover:border-indigo-accent tracking-widest pb-1 transition-none" href="work.html">
+          VIEW MORE WORKS →
+        </a>
+</div>
+</section>
+<!-- 5. SECTION: 현재 기획전 / EXHIBITION -->
+<section class="px-6 md:px-16 lg:px-24 mb-space-2xl" id="exhibition">
+<!-- Section Header -->
+<div class="border-t border-b border-primary py-4 mb-16 flex justify-between items-baseline">
+<h2 class="font-headline-md text-headline-md text-primary tracking-wider uppercase">
+          02 / 현재 기획전 — EXHIBITION
+        </h2>
+<span class="font-label-monospaced text-label-monospaced text-on-surface-variant uppercase">
+          MAIN GALLERY FLOOR
+        </span>
+</div>
+<!-- Split Layout: Imposing Poster & Architectural Curation Details -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-stretch border border-primary p-6 md:p-12">
+<!-- Left: Curatorial Visual Poster -->
+<div class="lg:col-span-5 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-outline-variant pb-8 lg:pb-0 lg:pr-12">
+<div class="border border-primary bg-background p-2 mb-6">
+<div class="aspect-[3/4] w-full bg-surface-container overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="An imposing Swiss-style exhibition poster design hung on an off-white textured concrete wall. The design splits dynamically between an abstract oil canvas texture of muted ochre and ultramarine, and a stark black-ink sequential comic book grid. Bold typographic typography reads 'SIDE BY SIDE' in severe condensed type. Bright museum floodlighting." src="assets/img/fa0c898f67a60c04.jpg"/>
+<div class="absolute top-4 left-4 bg-background border border-primary px-3 py-1 font-label-monospaced text-[11px] font-bold">
+                CURATED EXHIBITION № 08
+              </div>
+</div>
+</div>
+<div class="font-label-monospaced text-[11px] text-on-surface-variant leading-tight">
+            LOCATION: SIDE BY SIDE MAIN HALL (B1–1F)<br/>
+            ADMISSION: FREE TO THE PUBLIC / OPEN WED–SUN
+          </div>
+</div>
+<!-- Right: Exhibition Intel & Curatorial Essay -->
+<div class="lg:col-span-7 flex flex-col justify-between space-y-8">
+<div>
+<div class="font-label-monospaced-bold text-label-monospaced text-secondary uppercase tracking-widest mb-3">
+              CURRENT FOCUS · DUALITY &amp; RESIDENCE
+            </div>
+<h3 class="font-headline-lg text-headline-lg leading-none uppercase text-primary mb-2">
+              웹툰 × 회화: 나란히
+            </h3>
+<p class="font-label-monospaced text-label-monospaced text-on-surface-variant uppercase tracking-widest mb-6">
+              SIDE BY SIDE: SEQUENTIAL ART MEETS FINE ART
+            </p>
+<div class="inline-block border border-primary px-4 py-1.5 font-label-monospaced text-label-monospaced mb-8">
+              PERIOD: 2026.11.01 — 2026.12.20
+            </div>
+<div class="w-full h-px bg-outline-variant mb-8"></div>
+<!-- Curatorial Statement -->
+<div class="space-y-4">
+<span class="font-label-monospaced-bold text-label-monospaced uppercase tracking-wider block text-primary">
+                [CURATORIAL PREFACE]
+              </span>
+<p class="font-body-lg text-body-lg text-primary leading-relaxed">
+                대중적인 서사의 호흡을 지닌 웹툰과 응축된 침묵을 품은 순수 회화가 한 공간에서 서로의 시선을 교환합니다. 장르의 위계와 벽을 허물고, 시각 예술이 전하는 가장 본질적인 공존의 순간을 조명합니다.
+              </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                교회라는 영적 안식처의 원형과 화이트 큐브의 금욕적 질서가 교차하는 본 전시에서는 12인의 웹툰 작가와 12인의 순수 회화 작가가 짝을 이루어 단 하나의 벽을 공유합니다. 칸의 단절과 캔버스의 연속성이 빚어내는 역설적 성스러움을 경험하십시오.
+              </p>
+</div>
+</div>
+<!-- Exhibition Meta Stats Table -->
+<div class="border-t border-primary pt-6 mt-6">
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6 font-label-monospaced text-[12px]">
+<div>
+<span class="text-on-surface-variant block">PARTICIPANTS</span>
+<span class="font-bold text-primary">24 ARTISTS</span>
+</div>
+<div>
+<span class="text-on-surface-variant block">CURATED WORKS</span>
+<span class="font-bold text-primary">48 PIECES</span>
+</div>
+<div>
+<span class="text-on-surface-variant block">CATALOGUE</span>
+<span class="font-bold text-primary">EDITION OF 500</span>
+</div>
+</div>
+<a class="font-label-monospaced-bold text-label-monospaced text-secondary border-b border-indigo-accent tracking-widest pb-1 inline-block hover:opacity-80 transition-none" href="exhibition.html">
+              전시 서문 및 출품작 보기 [CURATORIAL ESSAY] →
+            </a>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. SECTION: 오늘의 작가 / ARTIST OF THE DAY -->
+<section class="mb-space-2xl" id="artist-of-day">
+<!-- Full-Width Warm Paper Canvas (#F4F2EE) -->
+<div class="bg-gallery-paper border-t border-b border-primary py-16 px-6 md:px-16 lg:px-24">
+<!-- Section Header -->
+<div class="border-b border-primary/40 pb-4 mb-12 flex justify-between items-baseline">
+<h2 class="font-headline-md text-headline-md text-primary tracking-wider uppercase">
+            03 / 오늘의 작가 — ARTIST OF THE DAY
+          </h2>
+<span class="font-label-monospaced text-label-monospaced text-secondary uppercase tracking-widest font-bold">
+            [MONOGRAPHIC ARCHIVE]
+          </span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Artist Studio Portrait / Visual Focus -->
+<div class="lg:col-span-5">
+<div class="border border-primary bg-background p-2">
+<div class="aspect-[4/5] w-full bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A solemn black-and-white documentary portrait of a contemporary visual artist in their sunlit daylight art studio. Canvases with architectural ink sketches lean against white gallery walls alongside high-end digital drawing tablets and ink pots. Natural directional light, razor-sharp focus, devoid of romantic filter effects." src="assets/img/0e287c4b056d4abe.jpg"/>
+</div>
+</div>
+<div class="mt-2 font-label-monospaced text-[11px] text-on-surface-variant text-right">
+              STUDIO ARCHIVE PHOTO · SEONGSU-DONG, 2026
+            </div>
+</div>
+<!-- Artist Editorial Discourse & Quotation -->
+<div class="lg:col-span-7 space-y-6">
+<div>
+<span class="font-label-monospaced-bold text-label-monospaced text-secondary tracking-widest uppercase block mb-1">
+                FEATURED RESIDENT CREATOR
+              </span>
+<h3 class="font-display-xl text-headline-lg leading-none uppercase text-primary">
+                한도윤 / DOYOUN HAN
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-medium mt-1">
+                웹툰 작가 &amp; 비주얼 아티스트 (Author of '도시의 밤' / Resident Fellow)
+              </p>
+</div>
+<!-- Monumental Quote -->
+<blockquote class="border-l-4 border-primary pl-6 py-2 my-6">
+<p class="font-body-lg text-body-lg md:text-title-sm text-primary font-normal leading-relaxed italic">
+                “만화의 칸과 칸 사이, 그 보이지 않는 여백 속에 가장 성스러운 침묵과 호흡이 깃든다고 믿습니다.”
+              </p>
+</blockquote>
+<!-- Monospace Technical Ledger / Bio -->
+<div class="font-label-monospaced text-label-monospaced text-primary space-y-2 border-t border-primary/20 pt-4">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+<span class="text-on-surface-variant">DISCIPLINE:</span>
+<span class="md:col-span-2">Sequential Art, Monochromatic Oil, Lithography</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+<span class="text-on-surface-variant">MAJOR RELEASES:</span>
+<span class="md:col-span-2">도시의 밤 (2022–2025), 방주의 그림자 (2026 예정)</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+<span class="text-on-surface-variant">AFFILIATION:</span>
+<span class="md:col-span-2">Side by Side Studio Residency Studio #04</span>
+</div>
+</div>
+<!-- Interactivity Frame -->
+<div class="pt-6">
+<a class="font-label-monospaced-bold text-label-monospaced text-primary hover:text-secondary border border-primary px-6 py-3 tracking-widest inline-block hover:border-indigo-accent transition-none" href="artist.html">
+                작가 아카이브 및 전작 인터뷰 열람 [VIEW ARCHIVE DOSSIER] →
+              </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. SECTION: WEBTOON SERIALS ARCHIVE -->
+<section class="mb-space-2xl" id="webtoon">
+<!-- Stark Pitch-Black Band (#0E0E0E) Spanning Entire Canvas -->
+<div class="bg-gallery-dark text-on-tertiary border-t border-b border-tertiary py-16 px-6 md:px-16 lg:px-24">
+<!-- Header Strip -->
+<div class="border-b border-surface-variant/20 pb-4 mb-12 flex flex-col md:flex-row justify-between md:items-baseline gap-2">
+<div>
+<span class="font-label-monospaced text-label-monospaced text-secondary-fixed-dim uppercase tracking-widest block mb-1">
+              SEQUENTIAL ART DEPARTMENT
+            </span>
+<h2 class="font-headline-md text-headline-md text-surface-bright tracking-wider uppercase">
+              04 / 연재 아카이브 — WEBTOON SERIALS
+            </h2>
+</div>
+<div class="font-label-monospaced text-label-monospaced text-surface-variant tracking-wider">
+            OFFICIAL PLATFORM ARCHIVE · UPDATED WEEKLY
+          </div>
+</div>
+<!-- 5-Column Horizontal Webtoon Gallery Deck (3:4 ratio) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+<!-- Webtoon Item 1 -->
+<article class="flex flex-col border border-surface-variant/30 bg-tertiary p-2">
+<div class="aspect-[3/4] w-full bg-surface-container-highest overflow-hidden mb-3 relative">
+<img class="w-full h-full object-cover" data-alt="A dark biblical sci-fi webtoon cover with cybernetic apostles adorned in monastic white hoods walking through an industrial desolate brutalist concrete landscape. High graphic contrast, Japanese manga screen tones, sharp black borders, cold fluorescent aesthetic." src="assets/img/ae94c14cfa2efece.jpg"/>
+<span class="absolute top-2 left-2 bg-black text-white border border-white font-label-monospaced text-[10px] px-1.5 py-0.5">
+                [연재중 / ONGOING]
+              </span>
+</div>
+<div class="space-y-1">
+<h4 class="font-title-sm text-[16px] text-white leading-tight font-bold">
+                성막의 사도들
+              </h4>
+<p class="font-label-monospaced text-[11px] text-surface-variant">
+                글·그림: 강현석
+              </p>
+<div class="pt-2 border-t border-surface-variant/20 flex justify-between items-center font-label-monospaced text-[11px]">
+<span class="text-secondary-fixed-dim">EPISODE 48</span>
+<a class="text-white hover:text-secondary-fixed-dim underline" href="webtoon.html">READ →</a>
+</div>
+</div>
+</article>
+<!-- Webtoon Item 2 -->
+<article class="flex flex-col border border-surface-variant/30 bg-tertiary p-2">
+<div class="aspect-[3/4] w-full bg-surface-container-highest overflow-hidden mb-3 relative">
+<img class="w-full h-full object-cover" data-alt="A vibrant neon-lit gothic sanctuary digital art cover showing a glowing stained glass window reflecting vibrant magenta and deep indigo across a wet rainy asphalt alleyway. Graphic novel linework, intense stylized darkness." src="assets/img/0866cb10c8a9650e.jpg"/>
+<span class="absolute top-2 left-2 bg-black text-white border border-white font-label-monospaced text-[10px] px-1.5 py-0.5">
+                [연재중 / ONGOING]
+              </span>
+</div>
+<div class="space-y-1">
+<h4 class="font-title-sm text-[16px] text-white leading-tight font-bold">
+                네온 성소
+              </h4>
+<p class="font-label-monospaced text-[11px] text-surface-variant">
+                글·그림: 윤채원
+              </p>
+<div class="pt-2 border-t border-surface-variant/20 flex justify-between items-center font-label-monospaced text-[11px]">
+<span class="text-secondary-fixed-dim">EPISODE 24</span>
+<a class="text-white hover:text-secondary-fixed-dim underline" href="webtoon.html">READ →</a>
+</div>
+</div>
+</article>
+<!-- Webtoon Item 3 -->
+<article class="flex flex-col border border-surface-variant/30 bg-tertiary p-2">
+<div class="aspect-[3/4] w-full bg-surface-container-highest overflow-hidden mb-3 relative">
+<img class="w-full h-full object-cover" data-alt="A minimalist noir graphic comic illustration featuring a figure holding a lantern amidst total darkness with deep cross-hatching pencil textures. Elegant high-contrast monochrome artwork reflecting contemplative solitude." src="assets/img/9b1cae435bead33c.jpg"/>
+<span class="absolute top-2 left-2 bg-black text-white border border-white font-label-monospaced text-[10px] px-1.5 py-0.5">
+                [연재중 / ONGOING]
+              </span>
+</div>
+<div class="space-y-1">
+<h4 class="font-title-sm text-[16px] text-white leading-tight font-bold">
+                어둠 속의 빛
+              </h4>
+<p class="font-label-monospaced text-[11px] text-surface-variant">
+                글·그림: 정민호
+              </p>
+<div class="pt-2 border-t border-surface-variant/20 flex justify-between items-center font-label-monospaced text-[11px]">
+<span class="text-secondary-fixed-dim">EPISODE 12</span>
+<a class="text-white hover:text-secondary-fixed-dim underline" href="webtoon.html">READ →</a>
+</div>
+</div>
+</article>
+<!-- Webtoon Item 4 -->
+<article class="flex flex-col border border-surface-variant/30 bg-tertiary p-2">
+<div class="aspect-[3/4] w-full bg-surface-container-highest overflow-hidden mb-3 relative">
+<img class="w-full h-full object-cover" data-alt="A towering monumental construct reminiscent of the Tower of Babel rendered in detailed blueprint architectural lineart with modern high-rise scaffolding under a pale white sky. Graphic ink linework with surreal modern allegorical tones." src="assets/img/d73e21b899751c5d.jpg"/>
+<span class="absolute top-2 left-2 bg-black text-white border border-white font-label-monospaced text-[10px] px-1.5 py-0.5">
+                [시즌완결 / HIATUS]
+              </span>
+</div>
+<div class="space-y-1">
+<h4 class="font-title-sm text-[16px] text-white leading-tight font-bold">
+                바벨의 아이들
+              </h4>
+<p class="font-label-monospaced text-[11px] text-surface-variant">
+                글: 조서연 / 그림: 임준호
+              </p>
+<div class="pt-2 border-t border-surface-variant/20 flex justify-between items-center font-label-monospaced text-[11px]">
+<span class="text-secondary-fixed-dim">SEASON 01 END</span>
+<a class="text-white hover:text-secondary-fixed-dim underline" href="webtoon.html">READ →</a>
+</div>
+</div>
+</article>
+<!-- Webtoon Item 5 -->
+<article class="flex flex-col border border-surface-variant/30 bg-tertiary p-2">
+<div class="aspect-[3/4] w-full bg-surface-container-highest overflow-hidden mb-3 relative">
+<img class="w-full h-full object-cover" data-alt="A tranquil pastel-wash illustrative comic cover depicting a peaceful suburban meadow at dawn with two figures looking toward the quiet horizon. Clean Japanese ligne claire comic aesthetic with tranquil soft greys and muted olive greens." src="assets/img/f44156f37304c024.jpg"/>
+<span class="absolute top-2 left-2 bg-black text-white border border-white font-label-monospaced text-[10px] px-1.5 py-0.5">
+                [연재중 / ONGOING]
+              </span>
+</div>
+<div class="space-y-1">
+<h4 class="font-title-sm text-[16px] text-white leading-tight font-bold">
+                평화의 날들
+              </h4>
+<p class="font-label-monospaced text-[11px] text-surface-variant">
+                글·그림: 백다솜
+              </p>
+<div class="pt-2 border-t border-surface-variant/20 flex justify-between items-center font-label-monospaced text-[11px]">
+<span class="text-secondary-fixed-dim">EPISODE 31</span>
+<a class="text-white hover:text-secondary-fixed-dim underline" href="webtoon.html">READ →</a>
+</div>
+</div>
+</article>
+</div>
+<!-- Serial Archive Terminal Link -->
+<div class="mt-12 pt-6 border-t border-surface-variant/20 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+<div class="font-label-monospaced text-[12px] text-surface-variant">
+            WEEKLY RELEASE SCHEDULE: EVERY TUESDAY &amp; FRIDAY 00:00 KST
+          </div>
+<a class="font-label-monospaced-bold text-label-monospaced text-secondary-fixed border-b border-secondary-fixed tracking-widest pb-0.5" href="webtoon.html">
+            전체 연재작 카탈로그 열람 [COMPLETE SERIAL INDEX] →
+          </a>
+</div>
+</div>
+</section>
+<!-- 8. FOOTER: Institutional Museum Colophon & Community Manifesto -->
+<footer class="border-t border-outline-variant bg-background pt-16 pb-24 px-6 md:px-16 lg:px-24" id="footer">
+<!-- Primary 4-Column Directory Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<!-- Column 1: Identity & Church Core Mission -->
+<div class="space-y-4">
+<span class="font-label-monospaced-bold text-label-monospaced uppercase tracking-widest text-primary block">
+            01 / IDENTITY &amp; VISION
+          </span>
+<h4 class="font-display-xl text-headline-md tracking-wider text-primary">
+            SIDE BY SIDE
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            문화예술교회 Side by Side는 고립된 창작 현장의 예술인과 웹툰 작가, 시각 예술가를 위한 탈교단적 예배와 전시 공동체입니다. 우리는 화려한 종교적 외피 대신 순백의 전시장 벽면 위에서 창조의 영성을 나눕니다.
+          </p>
+<div class="font-label-monospaced text-[11px] text-secondary font-bold">
+            [SUNDAY LITURGY &amp; GATHERING: 11:00 AM]
+          </div>
+</div>
+<!-- Column 2: Directory & Programs -->
+<div class="space-y-4">
+<span class="font-label-monospaced-bold text-label-monospaced uppercase tracking-widest text-primary block">
+            02 / DIRECTORY
+          </span>
+<ul class="space-y-2 font-label-monospaced text-label-monospaced text-on-surface-variant">
+<li>
+<a class="hover:text-secondary hover:underline transition-none" href="about.html#gatherings">
+                [공동체 소개 / MISSION STATEMENT]
+              </a>
+</li>
+<li>
+<a class="hover:text-secondary hover:underline transition-none" href="about.html#gatherings">
+                [주일 예배 및 예술가 모임 안내]
+              </a>
+</li>
+<li>
+<a class="hover:text-secondary hover:underline transition-none" href="about.html#programs">
+                [창작자 레지던시 프로그램 (입주 공모)]
+              </a>
+</li>
+<li>
+<a class="hover:text-secondary hover:underline transition-none" href="about.html#programs">
+                [스튜디오 및 화이트큐브 대관 프로토콜]
+              </a>
+</li>
+<li>
+<a class="hover:text-secondary hover:underline transition-none" href="about.html#programs">
+                [예술인 멘토링 &amp; 창작 심리 상담]
+              </a>
+</li>
+</ul>
+</div>
+<!-- Column 3: Institutional Navigation -->
+<div class="space-y-4">
+<span class="font-label-monospaced-bold text-label-monospaced uppercase tracking-widest text-primary block">
+            03 / NAVIGATION
+          </span>
+<ul class="space-y-2 font-label-monospaced text-label-monospaced text-on-surface-variant">
+<li>
+<a class="hover:text-secondary hover:underline transition-none" href="exhibition.html">
+                EXHIBITIONS [기획 및 상설전]
+              </a>
+</li>
+<li>
+<a class="hover:text-secondary hover:underline transition-none" href="exhibition.html">
+                ARTISTS [등재 작가 100인]
+              </a>
+</li>
+<li>
+<a class="hover:text-secondary hover:underline transition-none" href="webtoon.html">
+                WEBTOON SERIALS [연재 아카이브]
+              </a>
+</li>
+<li>
+<a class="hover:text-secondary hover:underline transition-none" href="#archive">
+                ESSAYS &amp; CRITICISM [비평지]
+              </a>
+</li>
+<li>
+<a class="hover:text-secondary hover:underline transition-none" href="work.html">
+                COLLECTION INQUIRIES [작품 소장 문의]
+              </a>
+</li>
+</ul>
+</div>
+<!-- Column 4: Contact & Physical Space -->
+<div class="space-y-4">
+<span class="font-label-monospaced-bold text-label-monospaced uppercase tracking-widest text-primary block">
+            04 / VISIT &amp; CONTACT
+          </span>
+<div class="font-label-monospaced text-label-monospaced text-on-surface-variant space-y-1">
+<p class="text-primary font-bold">SIDE BY SIDE ART SPACE</p>
+<p>서울특별시 성동구 성수이로 아틀리에길 24</p>
+<p>24 Atelier-gil, Seongsu-dong, Seoul</p>
+<p class="pt-2">WEDNESDAY — SUNDAY (11:00 — 19:00)</p>
+<p class="text-[11px] text-error font-bold">CLOSED ON MONDAYS &amp; TUESDAYS</p>
+</div>
+<div class="pt-2 font-label-monospaced text-label-monospaced space-y-1">
+<p>
+              E. <a class="underline hover:text-secondary" href="mailto:contact@sidebyside.art">contact@sidebyside.art</a>
+</p>
+<p>
+              IG. <a class="underline hover:text-secondary" href="#instagram">@sidebyside_art</a>
+</p>
+</div>
+</div>
+</div>
+<!-- Bottom Hairline Ledger & Copyright -->
+<div class="border-t border-primary pt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+<div class="font-label-monospaced text-[11px] text-on-surface-variant tracking-wider">
+          © 2026 SIDE BY SIDE ART SPACE &amp; CULTURAL COMMUNITY (문화예술교회). ALL RIGHTS RESERVED.
+        </div>
+<div class="flex items-center gap-6 font-label-monospaced text-[11px] text-primary">
+<span class="uppercase">CURATORIAL PROTOCOL: WHITE CUBE / SEQUENTIAL 1.0</span>
+<a class="border-b border-primary hover:border-indigo-accent text-secondary tracking-widest" href="index.html">
+            [TOP] ↑
+          </a>
+</div>
+</div>
+</footer>
+</main>
+</body></html>
